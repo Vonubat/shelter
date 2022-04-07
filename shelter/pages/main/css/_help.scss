@@ -1,8 +1,10 @@
+#bg-help {
+  background: $color-light-xl;
+  min-height: 611px;
+  width: 100%;
+}
 .help {
-  background: rgb(163, 59, 158);
-  position: absolute;
-  height: 611px;
-  left: 0%;
-  right: 0%;
-  top: 2373px;
+  box-sizing: border-box;
+  min-height: 611px;
+  width: 100%;
 }

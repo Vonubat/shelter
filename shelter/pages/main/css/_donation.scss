@@ -1,8 +1,10 @@
+#bg-donation {
+  background: $color-light-l;
+  min-height: 462px;
+  width: 100%;
+}
 .donation {
-  background: rgb(144, 163, 59);
-  position: absolute;
-  height: 462px;
-  left: 0%;
-  right: 0%;
-  top: 2984px;
+  box-sizing: border-box;
+  min-height: 462px;
+  width: 100%;
 }

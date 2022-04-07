@@ -1,8 +1,12 @@
+#bg-footer {
+  background-image: url(../../../assets/img/footer-gradient-background.png);
+  background-size: cover;
+  min-height: 350px;
+  width: 100%;
+}
+
 .footer {
-  background: rgb(81, 28, 124);
-  position: absolute;
-  height: 350px;
-  left: 0%;
-  right: 0%;
-  top: 3446px;
+  box-sizing: border-box;
+  min-height: 350px;
+  width: 100%;
 }

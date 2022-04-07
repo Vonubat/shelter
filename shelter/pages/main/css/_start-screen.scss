@@ -1,8 +1,12 @@
+#bg-start-screen {
+  background-image: url(../../../assets/img/start-screen-gradient-background.png);
+  background-size: cover;
+  min-height: 908px;
+  width: 100%;
+}
+
 .start-screen {
-  background: rgb(233, 67, 67);
-  position: absolute;
-  height: 908px;
-  left: 0%;
-  right: 0%;
-  top: 0px;
+  box-sizing: border-box;
+  min-height: 908px;
+  width: 100%;
 }

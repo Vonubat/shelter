@@ -1,8 +1,11 @@
+#bg-about {
+  background: $color-light-xl;
+  min-height: 588px;
+  width: 100%;
+}
+
 .about {
-  background: rgb(92, 163, 59);
-  position: absolute;
-  height: 588px;
-  left: 0%;
-  right: 0%;
-  top: 908px;
+  box-sizing: border-box;
+  min-height: 588px;
+  width: 100%;
 }
