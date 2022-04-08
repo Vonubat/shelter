@@ -1,6 +1,6 @@
 .start-screen {
   background-image: url(../../../assets/img/start-screen-gradient-background.png);
-  background-size: 100%;
+  background-size: cover;
   min-height: 908px;
   width: 100%;
   display: flex;
@@ -131,7 +131,6 @@
         width: 207px;
         height: 52px;
         margin-top: calc(42 / 1280 * 100vw);
-        box-sizing: border-box;
       }
     }
     .start-screen-puppy {
