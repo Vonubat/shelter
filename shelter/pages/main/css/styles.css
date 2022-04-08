@@ -73,11 +73,66 @@
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 588px;
   width: 100%;
+}
+
+.about .about-content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about .about-content img {
+  margin-top: calc(80 / 1280 * 100vw);
+  margin-left: calc(215 / 1280 * 100vw);
+  margin-right: calc(120 / 1280 * 100vw);
+  margin-bottom: calc(100 / 1280 * 100vw);
+  width: 300px;
+  height: 408px;
+}
+
+.about .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(430 / 1280 * 100vw);
+  height: calc(380 / 1280 * 100vw);
+}
+
+.about .content .heading {
+  /* h3 */
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 45px */
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-top: 7.34375vw;
+  margin-bottom: 1.95312vw;
+}
+
+.about .content .subheading {
+  /* paragraph-l */
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  /* or 24px */
+  color: #4c4c4c;
+  margin-bottom: 25px;
 }
 
 .donation {
