@@ -81,16 +81,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
-}
-
-.about .about-content img {
-  margin-top: calc(80 / 1280 * 100vw);
-  margin-left: calc(215 / 1280 * 100vw);
-  margin-right: calc(120 / 1280 * 100vw);
-  margin-bottom: calc(100 / 1280 * 100vw);
-  width: 300px;
-  height: 408px;
+  padding: 80px 40px 100px;
 }
 
 .about .content {
@@ -101,14 +96,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: calc(430 / 1280 * 100vw);
-  height: calc(380 / 1280 * 100vw);
+  width: 430px;
+  height: 380px;
+  padding: 14px 175px 14px 120px;
 }
 
-.about .content .heading {
+.about .content h3 {
   color: #545454;
-  margin-top: 7.34375vw;
-  margin-bottom: 1.95312vw;
 }
 
 .about .content .subheading {
@@ -120,7 +114,7 @@
   line-height: 160%;
   /* or 24px */
   color: #4c4c4c;
-  margin-bottom: 1.95312vw;
+  padding-top: 25px;
 }
 
 .bg-donation {
@@ -170,14 +164,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 80px 40px 100px;
 }
 
-.pets .pets-content .heading {
+.pets .pets-content h3 {
   color: #545454;
-  width: calc(400 / 1280 * 100vw);
-  height: calc(90 / 1280 * 100vw);
-  margin-top: calc(80 / 1280 * 100vw);
-  margin-bottom: calc(60 / 1280 * 100vw);
+  width: 400px;
+  height: 90px;
   text-align: center;
 }
 
@@ -185,13 +178,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1200px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 1200px;
+  padding-top: 60px;
 }
 
 .pets .pets-content .slider .button-arrow {
@@ -239,6 +230,19 @@
 
 .pets .pets-content .slider .card:hover {
   background: #ffffff;
+}
+
+.pets .pets-content .slider .Katrine {
+  margin-left: 53px;
+}
+
+.pets .pets-content .slider .Jennifer {
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.pets .pets-content .slider .Woody {
+  margin-right: 53px;
 }
 
 .pets .pets-content .slider .button-secondary {
@@ -309,7 +313,7 @@
           box-sizing: border-box;
   width: 261px;
   height: 52px;
-  margin-top: calc(60 / 1280 * 100vw);
+  margin-top: 60px;
 }
 
 .pets .pets-content .button-primary:hover {
@@ -357,6 +361,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .start-screen header .logo .title {

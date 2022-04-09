@@ -20,6 +20,8 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      cursor: pointer;
+      text-decoration: none;
 
       .title {
         @include logo-title();

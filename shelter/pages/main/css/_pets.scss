@@ -10,29 +10,44 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 80px 40px 100px;
 
-    .heading {
+    h3 {
       color: $color-dark-l;
-
-      width: calc(400 / 1280 * 100vw);
-      height: calc(90 / 1280 * 100vw);
-      margin-top: calc(80 / 1280 * 100vw);
-      margin-bottom: calc(60 / 1280 * 100vw);
+      width: 400px;
+      height: 90px;
       text-align: center;
     }
+
     .slider {
       display: flex;
-      width: 1200px;
       align-items: center;
-      justify-content: space-between;
+      width: 1200px;
+      padding-top: 60px;
+
       .button-arrow {
         @include button-arrow();
       }
+
       .back {
         transform: rotate(180deg);
       }
+
       .card {
         @include card;
+      }
+
+      .Katrine {
+        margin-left: 53px;
+      }
+
+      .Jennifer {
+        margin-left: 90px;
+        margin-right: 90px;
+      }
+
+      .Woody {
+        margin-right: 53px;
       }
 
       .button-secondary {
@@ -48,15 +63,15 @@
         letter-spacing: 0.06em;
         text-align: center;
         color: $color-dark-l;
-
         margin-top: 30px;
       }
     }
+
     .button-primary {
       @include button-primary();
       width: 261px;
       height: 52px;
-      margin-top: calc(60 / 1280 * 100vw);
+      margin-top: 60px;
     }
   }
 }

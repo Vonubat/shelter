@@ -5,32 +5,25 @@
 
 .about {
   display: flex;
+  justify-content: center;
   width: 100%;
-  .about-content {
-    img {
-      margin-top: calc(80 / 1280 * 100vw);
-      margin-left: calc(215 / 1280 * 100vw);
-      margin-right: calc(120 / 1280 * 100vw);
-      margin-bottom: calc(100 / 1280 * 100vw);
-      width: 300px;
-      height: 408px;
-    }
-  }
+  padding: 80px 40px 100px;
+
   .content {
     display: flex;
     flex-direction: column;
-    width: calc(430 / 1280 * 100vw);
-    height: calc(380 / 1280 * 100vw);
+    width: 430px;
+    height: 380px;
+    padding: 14px 175px 14px 120px;
 
-    .heading {
+    h3 {
       color: $color-dark-l;
-      margin-top: (94/ 1280 * 100vw);
-      margin-bottom: (25/ 1280 * 100vw);
     }
+
     .subheading {
       @include paragraph-l();
       color: $color-dark-xl;
-      margin-bottom: (25/ 1280 * 100vw);
+      padding-top: 25px;
     }
   }
 }
