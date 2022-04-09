@@ -1,7 +1,13 @@
-.footer {
-  background-image: url(../../../assets/img/footer-gradient-background.png);
-  background-size: cover;
-  box-sizing: border-box;
+.bg-footer {
+  background: radial-gradient(
+      110.67% 538.64% at 5.73% 50%,
+      #513d2f 0%,
+      #1a1a1c 100%
+    ),
+    #211f20;
   min-height: 350px;
+}
+
+.footer {
   width: 100%;
 }

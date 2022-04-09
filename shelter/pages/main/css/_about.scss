@@ -1,11 +1,12 @@
+.bg-about {
+  background: $color-light-xl;
+  min-height: 588px;
+}
+
 .about {
   display: flex;
-  background: $color-light-xl;
-  box-sizing: border-box;
-  min-height: 588px;
   width: 100%;
   .about-content {
-    box-sizing: border-box;
     img {
       margin-top: calc(80 / 1280 * 100vw);
       margin-left: calc(215 / 1280 * 100vw);
@@ -20,19 +21,17 @@
     flex-direction: column;
     width: calc(430 / 1280 * 100vw);
     height: calc(380 / 1280 * 100vw);
-    box-sizing: border-box;
+
     .heading {
       @include h3();
       color: $color-dark-l;
       margin-top: (94/ 1280 * 100vw);
       margin-bottom: (25/ 1280 * 100vw);
-      box-sizing: border-box;
     }
     .subheading {
       @include paragraph-l();
       color: $color-dark-xl;
       margin-bottom: (25/ 1280 * 100vw);
-      box-sizing: border-box;
     }
   }
 }

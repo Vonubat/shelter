@@ -1,11 +1,12 @@
-.pets {
+.bg-pets {
   background: $color-light-l;
-  box-sizing: border-box;
   min-height: 877px;
+}
+
+.pets {
   width: 100%;
 
   .pets-content {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +14,7 @@
     .heading {
       @include h3();
       color: $color-dark-l;
-      box-sizing: border-box;
+
       width: calc(400 / 1280 * 100vw);
       height: calc(90 / 1280 * 100vw);
       margin-top: calc(80 / 1280 * 100vw);
@@ -21,7 +22,6 @@
       text-align: center;
     }
     .slider {
-      box-sizing: border-box;
       display: flex;
       width: 1200px;
       align-items: center;
@@ -49,7 +49,7 @@
         letter-spacing: 0.06em;
         text-align: center;
         color: $color-dark-l;
-        box-sizing: border-box;
+
         margin-top: 30px;
       }
     }

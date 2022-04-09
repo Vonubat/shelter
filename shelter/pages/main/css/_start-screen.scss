@@ -1,41 +1,39 @@
-.start-screen {
-  background-image: url(../../../assets/img/start-screen-gradient-background.png);
-  background-size: cover;
+.bg-start-screen {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
+    #211f20;
   min-height: 908px;
-  width: 100%;
+}
+
+.start-screen {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  min-height: 908px;
-
+  width: 100%;
   header {
     display: flex;
     justify-content: space-between;
-    margin: calc(60 / 1280 * 100vw) calc(40 / 1280 * 100vw) 0px;
-    box-sizing: border-box;
+    margin: 60px;
+
     height: 60px;
+
     .logo {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      box-sizing: border-box;
+
       .title {
         @include logo-title();
         color: $color-primary;
-        box-sizing: border-box;
       }
       .subtitle {
         @include logo_subtitle();
         color: $color-light-xl;
-        box-sizing: border-box;
       }
     }
     .nav-menu {
       display: flex;
       align-items: center;
       flex-shrink: 3;
-      box-sizing: border-box;
 
       ul {
         display: flex;
@@ -46,21 +44,20 @@
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         padding-inline-start: 0;
-        box-sizing: border-box;
+
         li {
           display: flex;
           flex-direction: column;
           align-items: center;
           order: 0;
           margin: 0px 0px 0px calc(35 / 1280 * 100vw);
-          box-sizing: border-box;
+
           a {
             /*normal*/
             @include paragraph-l();
             color: $color-dark-s;
             cursor: pointer;
             text-decoration: none;
-            box-sizing: border-box;
           }
           .border-unique {
             flex: none;
@@ -70,15 +67,13 @@
             height: 3px;
             border-radius: 0px;
             background: $color-primary;
-            box-sizing: border-box;
           }
           .nav-unique {
             color: $color-light-s;
-            box-sizing: border-box;
           }
           .nav-others:active {
             color: $color-light-s;
-            box-sizing: border-box;
+
             ~ .border-others {
               flex: none;
               align-self: stretch;
@@ -87,12 +82,10 @@
               height: 3px;
               border-radius: 0px;
               background: $color-primary;
-              box-sizing: border-box;
             }
           }
           .nav-others:hover {
             color: $color-light-s;
-            box-sizing: border-box;
           }
         }
       }
@@ -101,22 +94,23 @@
   .start-screen-content {
     display: flex;
     justify-content: space-between;
-    margin: calc(60 / 1280 * 100vw) calc(40 / 1280 * 100vw) 0px;
-    box-sizing: border-box;
+    // margin: calc(60 / 1280 * 100vw) calc(40 / 1280 * 100vw) 0px;
+    //
+
     .content {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       flex-direction: column;
-      box-sizing: border-box;
+
       flex-basis: 728px;
+
       .heading {
         @include h2();
         color: $color-light-xl;
-        width: calc(310 / 1280 * 100vw);
-        height: calc(114 / 1280 * 100vw);
+        // width: calc(310 / 1280 * 100vw);
+        // height: calc(114 / 1280 * 100vw);
         margin-top: 0;
-        box-sizing: border-box;
       }
       .subheading {
         @include paragraph-l();
@@ -124,7 +118,6 @@
         width: calc(460 / 1280 * 100vw);
         height: calc(72 / 1280 * 100vw);
         margin-top: calc(42 / 1280 * 100vw);
-        box-sizing: border-box;
       }
       .button-primary {
         @include button-primary();
@@ -134,9 +127,9 @@
       }
     }
     .start-screen-puppy {
-      width: 698px;
-      height: 728px;
-      box-sizing: border-box;
+      // width: 698px;
+      // height: 728px;
+      //
     }
   }
 
@@ -148,6 +141,5 @@
     margin: 0;
     font-size: 0;
     margin: 0;
-    box-sizing: border-box;
   }
 }
