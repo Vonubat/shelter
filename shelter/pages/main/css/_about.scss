@@ -23,7 +23,6 @@
     height: calc(380 / 1280 * 100vw);
 
     .heading {
-      @include h3();
       color: $color-dark-l;
       margin-top: (94/ 1280 * 100vw);
       margin-bottom: (25/ 1280 * 100vw);

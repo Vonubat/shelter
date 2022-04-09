@@ -106,14 +106,6 @@
 }
 
 .about .content .heading {
-  /* h3 */
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  /* or 45px */
-  letter-spacing: 0.06em;
   color: #545454;
   margin-top: 7.34375vw;
   margin-bottom: 1.95312vw;
@@ -181,14 +173,6 @@
 }
 
 .pets .pets-content .heading {
-  /* h3 */
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  /* or 45px */
-  letter-spacing: 0.06em;
   color: #545454;
   width: calc(400 / 1280 * 100vw);
   height: calc(90 / 1280 * 100vw);
@@ -215,9 +199,9 @@
   width: 52px;
   height: 52px;
   border: 2px solid #f1cdb3;
+  border-radius: 100px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 100px;
 }
 
 .pets .pets-content .slider .button-arrow:hover {
@@ -355,7 +339,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 60px;
+  padding: 60px 40px 0px;
   height: 60px;
 }
 
@@ -406,8 +390,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-negative: 3;
-      flex-shrink: 3;
 }
 
 .start-screen header .nav-menu ul {
@@ -423,29 +405,16 @@
           margin-block-start: 0;
   -webkit-margin-after: 0;
           margin-block-end: 0;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
 }
 
 .start-screen header .nav-menu ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
-  margin: 0px 0px 0px calc(35 / 1280 * 100vw);
+  padding: 0px 0px 0px 35px;
 }
 
 .start-screen header .nav-menu ul li a {
@@ -511,14 +480,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 60px 40px 0px;
 }
 
 .start-screen .start-screen-content .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -526,20 +494,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 728px;
-      flex-basis: 728px;
 }
 
-.start-screen .start-screen-content .content .heading {
-  /* h2 */
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 44px;
-  line-height: 130%;
-  /* or 57px */
+.start-screen .start-screen-content .content h2 {
   color: #ffffff;
-  margin-top: 0;
+  width: 310px;
+  height: 114px;
 }
 
 .start-screen .start-screen-content .content .subheading {
@@ -551,9 +511,9 @@
   line-height: 160%;
   /* or 24px */
   color: #cdcdcd;
-  width: calc(460 / 1280 * 100vw);
-  height: calc(72 / 1280 * 100vw);
-  margin-top: calc(42 / 1280 * 100vw);
+  width: 460px;
+  height: 72px;
+  padding-top: 42px;
 }
 
 .start-screen .start-screen-content .content .button-primary {
@@ -582,21 +542,11 @@
           box-sizing: border-box;
   width: 207px;
   height: 52px;
-  margin-top: calc(42 / 1280 * 100vw);
+  margin-top: 42px;
 }
 
 .start-screen .start-screen-content .content .button-primary:hover {
   background: #fddcc4;
-}
-
-.start-screen h1 {
-  position: fixed;
-  left: 0;
-  top: 0;
-  font-size: 0;
-  margin: 0;
-  font-size: 0;
-  margin: 0;
 }
 
 /* main block */
@@ -614,5 +564,103 @@
   left: 0;
   max-width: 1280px;
   margin: 0 auto;
+}
+
+h1 {
+  /* invisible (for search-engines) */
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-size: 0;
+  margin: 0;
+  font-size: 0;
+  margin: 0;
+}
+
+h2 {
+  /* h2 reset*/
+  font-size: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  font-weight: 0;
+  /* h2 new*/
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+}
+
+h3 {
+  /* h3 reset*/
+  font-size: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  font-weight: 0;
+  /* h3 new */
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 45px */
+  letter-spacing: 0.06em;
+}
+
+h4 {
+  /* h4 reset*/
+  font-size: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  font-weight: 0;
+  /* h4 new */
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  letter-spacing: 0.06em;
+}
+
+h5 {
+  /* h5 reset*/
+  font-size: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  font-weight: 0;
+  /* h5 new */
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  /* identical to box height, or 17px */
+  letter-spacing: 0.06em;
 }
 /*# sourceMappingURL=styles.css.map */

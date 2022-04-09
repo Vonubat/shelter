@@ -12,7 +12,6 @@
     align-items: center;
 
     .heading {
-      @include h3();
       color: $color-dark-l;
 
       width: calc(400 / 1280 * 100vw);

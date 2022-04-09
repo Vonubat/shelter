@@ -47,6 +47,7 @@ $color-primary-light: #fddcc4;
     background: $color-primary-light;
   }
 }
+
 @mixin button-secondary() {
   display: flex;
   flex-direction: column;
@@ -67,41 +68,25 @@ $color-primary-light: #fddcc4;
     background: $color-primary-light;
   }
 }
+
 @mixin button-arrow() {
   padding: 15px 15px;
   width: 52px;
   height: 52px;
   border: 2px solid $color-primary;
-  box-sizing: border-box;
   border-radius: 100px;
+  box-sizing: border-box;
   &:hover {
     background: $color-primary-light;
     border: 2px solid transparent;
   }
 }
+
 @mixin card-hover() {
   background: #c4c4c4;
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
-@mixin h2() {
-  /* h2 */
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 44px;
-  line-height: 130%;
-  /* or 57px */
-}
-@mixin h3() {
-  /* h3 */
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  /* or 45px */
-  letter-spacing: 0.06em;
-}
+
 @mixin h3-mobile() {
   /* h3-mobile */
   font-family: "Georgia";
@@ -112,26 +97,7 @@ $color-primary-light: #fddcc4;
   /* or 32px */
   letter-spacing: 0.06em;
 }
-@mixin h4() {
-  /* h4 */
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 115%;
-  /* identical to box height, or 23px */
-  letter-spacing: 0.06em;
-}
-@mixin h5() {
-  /* h5 */
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 110%;
-  /* identical to box height, or 17px */
-  letter-spacing: 0.06em;
-}
+
 @mixin h5-modal-window() {
   /* h5-modal-window */
   font-family: "Georgia";
@@ -142,6 +108,7 @@ $color-primary-light: #fddcc4;
   /* identical to box height, or 17px */
   letter-spacing: 0.06em;
 }
+
 @mixin paragraph-l() {
   /* paragraph-l */
   font-family: "Arial";
@@ -151,6 +118,7 @@ $color-primary-light: #fddcc4;
   line-height: 160%;
   /* or 24px */
 }
+
 @mixin paragraph-s() {
   /* paragraph-s */
   font-family: "Arial";
@@ -160,6 +128,7 @@ $color-primary-light: #fddcc4;
   line-height: 150%;
   /* identical to box height, or 18px */
 }
+
 @mixin paragraph-mobile-menu() {
   font-family: "Arial";
   font-style: normal;
@@ -167,6 +136,7 @@ $color-primary-light: #fddcc4;
   font-size: 32px;
   line-height: 160%;
 }
+
 @mixin logo_title() {
   /* logo_title */
   font-family: "Georgia";
@@ -177,6 +147,7 @@ $color-primary-light: #fddcc4;
   /* identical to box height, or 35px */
   letter-spacing: 0.06em;
 }
+
 @mixin logo_subtitle() {
   /* logo_subtitle */
   font-family: "Arial";
