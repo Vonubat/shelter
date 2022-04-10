@@ -1,6 +1,6 @@
 .bg-pets {
   background: $color-light-l;
-  min-height: 1342px;
+  min-height: 877px;
 }
 
 .pets {
@@ -25,12 +25,19 @@
       width: 1200px;
       padding-top: 60px;
 
-      .button-arrow {
-        @include button-arrow();
+      .back {
+        cursor: pointer;
+        &:hover {
+          background: url(../../../assets/icons/button_arrow_hover.png);
+        }
       }
 
-      .back {
+      .forward {
+        cursor: pointer;
         transform: rotate(180deg);
+        &:hover {
+          background: url(../../../assets/icons/button_arrow_hover.png);
+        }
       }
 
       .card {

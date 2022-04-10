@@ -444,7 +444,7 @@ footer .locations .london:hover {
 
 .bg-pets {
   background: #f6f6f6;
-  min-height: 1342px;
+  min-height: 877px;
 }
 
 .pets {
@@ -483,25 +483,22 @@ footer .locations .london:hover {
   padding-top: 60px;
 }
 
-.pets .pets-content .slider .button-arrow {
-  padding: 15px 15px;
-  width: 52px;
-  height: 52px;
-  border: 2px solid #f1cdb3;
-  border-radius: 100px;
-  cursor: pointer;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.pets .pets-content .slider .button-arrow:hover {
-  background: #fddcc4;
-  border: 2px solid transparent;
-}
-
 .pets .pets-content .slider .back {
+  cursor: pointer;
+}
+
+.pets .pets-content .slider .back:hover {
+  background: url(../../../assets/icons/button_arrow_hover.png);
+}
+
+.pets .pets-content .slider .forward {
+  cursor: pointer;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.pets .pets-content .slider .forward:hover {
+  background: url(../../../assets/icons/button_arrow_hover.png);
 }
 
 .pets .pets-content .slider .card {

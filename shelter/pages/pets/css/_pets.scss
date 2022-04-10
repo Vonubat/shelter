@@ -1,6 +1,6 @@
 .bg-pets {
   background: $color-light-l;
-  min-height: 877px;
+  min-height: 1342px;
 }
 
 .pets {
@@ -19,19 +19,11 @@
       text-align: center;
     }
 
-    .slider {
+    .cards-container {
       display: flex;
-      align-items: center;
-      width: 1200px;
-      padding-top: 60px;
-
-      .button-arrow {
-        @include button-arrow();
-      }
-
-      .back {
-        transform: rotate(180deg);
-      }
+      flex-wrap: wrap;
+      padding-top: 45px;
+      padding-bottom: 45px;
 
       .card {
         @include card;
@@ -43,16 +35,45 @@
       }
 
       .Katrine {
-        margin-left: 53px;
+        margin-top: 15px;
       }
 
       .Jennifer {
-        margin-left: 90px;
-        margin-right: 90px;
+        margin-left: 40px;
+        margin-top: 15px;
       }
 
       .Woody {
-        margin-right: 53px;
+        margin-left: 40px;
+        margin-top: 15px;
+      }
+
+      .Sophia {
+        margin-left: 40px;
+        margin-top: 15px;
+      }
+
+      .Timmy {
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+
+      .Charly {
+        margin-left: 40px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+
+      .Scarlett {
+        margin-left: 40px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+
+      .Freddie {
+        margin-left: 40px;
+        margin-top: 30px;
+        margin-bottom: 15px;
       }
 
       .button-secondary {
@@ -71,12 +92,27 @@
         margin-top: 30px;
       }
     }
+    nav {
+      display: flex;
+      justify-content: center;
 
-    .button-primary {
-      @include button-primary();
-      width: 261px;
-      height: 52px;
-      margin-top: 60px;
+      a {
+        text-decoration: none;
+        @include button-arrow();
+        margin: 0 20px;
+      }
+
+      .right {
+        color: $color-dark-s;
+      }
+
+      .page {
+        color: $color-dark-3xl;
+      }
+
+      .left {
+        color: $color-dark-3xl;
+      }
     }
   }
 }
