@@ -399,7 +399,7 @@ footer .locations .london:hover {
 }
 
 .help .pet-food {
-  padding: 0;
+  padding-right: 60px;
   height: 113px;
 }
 
@@ -419,12 +419,13 @@ footer .locations .london:hover {
 }
 
 .help .shampoos {
-  padding: 0;
+  padding-left: 60px;
   height: 113px;
 }
 
 .help .vitamins {
   padding-left: 85px;
+  padding-right: 60px;
   height: 113px;
 }
 
@@ -440,6 +441,7 @@ footer .locations .london:hover {
 
 .help .sleeping-areas {
   padding-right: 85px;
+  padding-left: 60px;
   height: 113px;
 }
 

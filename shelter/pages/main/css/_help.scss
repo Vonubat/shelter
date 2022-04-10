@@ -43,7 +43,7 @@
   }
 
   .pet-food {
-    padding: 0;
+    padding-right: 60px;
     height: 113px;
   }
 
@@ -63,12 +63,13 @@
   }
 
   .shampoos {
-    padding: 0;
+    padding-left: 60px;
     height: 113px;
   }
 
   .vitamins {
     padding-left: 85px;
+    padding-right: 60px;
     height: 113px;
   }
 
@@ -84,6 +85,7 @@
 
   .sleeping-areas {
     padding-right: 85px;
+    padding-left: 60px;
     height: 113px;
   }
 }
