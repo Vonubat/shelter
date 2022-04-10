@@ -21,12 +21,15 @@
 
     h3 {
       color: $color-dark-l;
+      width: 370px;
+      height: 90px;
     }
 
     .subheading {
       @include paragraph-l();
       color: $color-dark-xl;
       padding-top: 25px;
+      width: 430px;
     }
   }
 }
