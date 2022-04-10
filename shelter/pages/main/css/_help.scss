@@ -11,22 +11,22 @@
   }
   h3 {
     color: $color-dark-l;
-    width: 308px;
+    width: 320px;
     height: 90px;
     text-align: center;
     margin: 0 auto;
   }
 
   .list1 {
-    margin: 60px 87px 0px 87px;
     display: flex;
+    padding: 60px 87px 0px 87px;
     justify-content: space-between;
     align-items: center;
   }
 
   .list2 {
     display: flex;
-    margin: 55px 87px 0px 87px;
+    padding: 60px 87px 0px 87px;
     justify-content: space-between;
     align-items: center;
   }
@@ -42,37 +42,46 @@
 
   .pet-food {
     padding: 0;
+    height: 113px;
   }
 
   .transportation {
     padding: 0 60px;
+    height: 113px;
   }
 
   .toys {
     padding: 0 60px;
+    height: 113px;
   }
 
   .bowls-and-cups {
     padding: 0 60px;
+    height: 113px;
   }
 
   .shampoos {
     padding: 0;
+    height: 113px;
   }
 
   .vitamins {
     padding-left: 85px;
+    height: 113px;
   }
 
   .medecines {
     padding: 0 60px;
+    height: 113px;
   }
 
   .collars-leashes {
     padding: 0 60px;
+    height: 113px;
   }
 
   .sleeping-areas {
     padding-right: 85px;
+    height: 113px;
   }
 }

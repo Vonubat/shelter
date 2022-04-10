@@ -101,13 +101,14 @@
 
     .content {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       flex-direction: column;
 
       h2 {
         color: $color-light-xl;
         width: 310px;
         height: 114px;
+        padding-top: 163px;
       }
 
       .subheading {

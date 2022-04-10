@@ -178,6 +178,10 @@
   text-decoration: none;
 }
 
+.donation .donation-content .content .credit-card:hover {
+  background: #fddcc4;
+}
+
 .donation .donation-content .content .credit-card img {
   margin: 0px 15px;
 }
@@ -220,17 +224,17 @@
 
 .help h3 {
   color: #545454;
-  width: 308px;
+  width: 320px;
   height: 90px;
   text-align: center;
   margin: 0 auto;
 }
 
 .help .list1 {
-  margin: 60px 87px 0px 87px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 60px 87px 0px 87px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -243,7 +247,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 55px 87px 0px 87px;
+  padding: 60px 87px 0px 87px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -263,38 +267,47 @@
 
 .help .pet-food {
   padding: 0;
+  height: 113px;
 }
 
 .help .transportation {
   padding: 0 60px;
+  height: 113px;
 }
 
 .help .toys {
   padding: 0 60px;
+  height: 113px;
 }
 
 .help .bowls-and-cups {
   padding: 0 60px;
+  height: 113px;
 }
 
 .help .shampoos {
   padding: 0;
+  height: 113px;
 }
 
 .help .vitamins {
   padding-left: 85px;
+  height: 113px;
 }
 
 .help .medecines {
   padding: 0 60px;
+  height: 113px;
 }
 
 .help .collars-leashes {
   padding: 0 60px;
+  height: 113px;
 }
 
 .help .sleeping-areas {
   padding-right: 85px;
+  height: 113px;
 }
 
 .bg-pets {
@@ -646,9 +659,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -659,6 +672,7 @@
   color: #ffffff;
   width: 310px;
   height: 114px;
+  padding-top: 163px;
 }
 
 .start-screen .start-screen-content .content .subheading {
