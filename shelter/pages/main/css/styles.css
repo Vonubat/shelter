@@ -129,6 +129,73 @@
   width: 100%;
 }
 
+.donation .donation-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 182px 100px 183px;
+}
+
+.donation .donation-content img {
+  margin-top: 11px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+}
+
+.donation .donation-content .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.donation .donation-content .content h3 {
+  width: 300px;
+  height: 90px;
+  color: #545454;
+}
+
+.donation .donation-content .content h5 {
+  color: #545454;
+  padding-top: 20px;
+}
+
+.donation .donation-content .content .credit-card {
+  margin-top: 20px;
+  width: 349px;
+  height: 43px;
+  background: #f1cdb3;
+  border-radius: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.donation .donation-content .content .credit-card img {
+  margin: 0px 15px;
+}
+
+.donation .donation-content .content .credit-card h4 {
+  color: #545454;
+}
+
+.donation .donation-content .content .lorem {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+  padding-top: 20px;
+}
+
 .bg-footer {
   background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
   min-height: 350px;
