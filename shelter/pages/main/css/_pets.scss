@@ -35,6 +35,11 @@
 
       .card {
         @include card;
+        &:hover {
+          .button-secondary {
+            background: $color-primary-light;
+          }
+        }
       }
 
       .Katrine {

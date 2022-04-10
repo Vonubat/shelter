@@ -520,6 +520,10 @@
   background: #ffffff;
 }
 
+.pets .pets-content .slider .card:hover .button-secondary {
+  background: #fddcc4;
+}
+
 .pets .pets-content .slider .Katrine {
   margin-left: 53px;
 }
