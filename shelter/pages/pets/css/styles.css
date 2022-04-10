@@ -385,15 +385,27 @@ footer .locations .london:hover {
   border: 2px solid transparent;
 }
 
-.pets .pets-content nav .right {
+.pets .pets-content nav .left {
   color: #cdcdcd;
+}
+
+.pets .pets-content nav .left:hover {
+  background: #f6f6f6;
+  border: 2px solid #f1cdb3;
+  cursor: default;
 }
 
 .pets .pets-content nav .page {
   color: #292929;
 }
 
-.pets .pets-content nav .left {
+.pets .pets-content nav .page:hover {
+  background: #f6f6f6;
+  border: 2px solid #f1cdb3;
+  cursor: default;
+}
+
+.pets .pets-content nav .right {
   color: #292929;
 }
 

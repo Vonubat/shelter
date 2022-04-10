@@ -102,15 +102,25 @@
         margin: 0 20px;
       }
 
-      .right {
+      .left {
         color: $color-dark-s;
+        &:hover {
+          background: $color-light-l;
+          border: 2px solid $color-primary;
+          cursor: default;
+        }
       }
 
       .page {
         color: $color-dark-3xl;
+        &:hover {
+          background: $color-light-l;
+          border: 2px solid $color-primary;
+          cursor: default;
+        }
       }
 
-      .left {
+      .right {
         color: $color-dark-3xl;
       }
     }
