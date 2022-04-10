@@ -209,6 +209,127 @@
   width: 100%;
 }
 
+.footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 40px 0px;
+}
+
+.footer .footer-content .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px 158px 60px 0px;
+}
+
+.footer .footer-content .contacts h3 {
+  color: #ffffff;
+  width: 280px;
+  height: 90px;
+}
+
+.footer .footer-content .contacts .mail {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #f1cdb3;
+}
+
+.footer .footer-content .contacts .mail img {
+  padding-right: 20px;
+}
+
+.footer .footer-content .contacts .mail:hover {
+  color: #fddcc4;
+}
+
+.footer .footer-content .contacts .phone {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #f1cdb3;
+}
+
+.footer .footer-content .contacts .phone img {
+  padding-right: 20px;
+}
+
+.footer .footer-content .contacts .phone:hover {
+  color: #fddcc4;
+}
+
+.footer .locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px 160px 60px 0px;
+}
+
+.footer .locations h3 {
+  color: #ffffff;
+  width: 270px;
+  height: 90px;
+}
+
+.footer .locations .boston {
+  padding-top: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #f1cdb3;
+}
+
+.footer .locations .boston img {
+  padding-right: 20px;
+}
+
+.footer .locations .boston:hover {
+  color: #fddcc4;
+}
+
+.footer .locations .london {
+  padding-top: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #f1cdb3;
+}
+
+.footer .locations .london img {
+  padding-right: 20px;
+}
+
+.footer .locations .london:hover {
+  color: #fddcc4;
+}
+
 .bg-help {
   background: #ffffff;
   min-height: 611px;
@@ -247,7 +368,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 60px 87px 0px 87px;
+  padding: 55px 87px 0px 87px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -357,6 +478,7 @@
   height: 52px;
   border: 2px solid #f1cdb3;
   border-radius: 100px;
+  cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }

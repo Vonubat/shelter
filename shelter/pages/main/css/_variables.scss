@@ -75,6 +75,7 @@ $color-primary-light: #fddcc4;
   height: 52px;
   border: 2px solid $color-primary;
   border-radius: 100px;
+  cursor: pointer;
   box-sizing: border-box;
   &:hover {
     background: $color-primary-light;
