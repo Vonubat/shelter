@@ -1,0 +1,98 @@
+.bg-footer {
+  background: radial-gradient(
+      110.67% 538.64% at 5.73% 50%,
+      #513d2f 0%,
+      #1a1a1c 100%
+    ),
+    #211f20;
+  min-height: 350px;
+}
+
+.footer {
+  width: 100%;
+
+  .footer-content {
+    display: flex;
+    padding: 40px 40px 0px;
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      padding: 16px 158px 60px 0px;
+
+      h3 {
+        color: $color-light-xl;
+        width: 280px;
+        height: 90px;
+      }
+
+      .mail {
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-primary;
+        img {
+          padding-right: 20px;
+        }
+        &:hover {
+          color: $color-primary-light;
+        }
+      }
+
+      .phone {
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-primary;
+        img {
+          padding-right: 20px;
+        }
+        &:hover {
+          color: $color-primary-light;
+        }
+      }
+    }
+  }
+
+  .locations {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 160px 60px 0px;
+
+    h3 {
+      color: $color-light-xl;
+      width: 270px;
+      height: 90px;
+    }
+
+    .boston {
+      padding-top: 33px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $color-primary;
+      img {
+        padding-right: 20px;
+      }
+      &:hover {
+        color: $color-primary-light;
+      }
+    }
+
+    .london {
+      padding-top: 33px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $color-primary;
+      img {
+        padding-right: 20px;
+      }
+      &:hover {
+        color: $color-primary-light;
+      }
+    }
+  }
+}

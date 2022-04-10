@@ -205,18 +205,18 @@
   min-height: 350px;
 }
 
-footer {
+.footer {
   width: 100%;
 }
 
-footer .footer-content {
+.footer .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 40px 40px 0px;
 }
 
-footer .footer-content .contacts {
+.footer .footer-content .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,13 +227,13 @@ footer .footer-content .contacts {
   padding: 16px 158px 60px 0px;
 }
 
-footer .footer-content .contacts h3 {
+.footer .footer-content .contacts h3 {
   color: #ffffff;
   width: 280px;
   height: 90px;
 }
 
-footer .footer-content .contacts .mail {
+.footer .footer-content .contacts .mail {
   padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,15 +245,15 @@ footer .footer-content .contacts .mail {
   color: #f1cdb3;
 }
 
-footer .footer-content .contacts .mail img {
+.footer .footer-content .contacts .mail img {
   padding-right: 20px;
 }
 
-footer .footer-content .contacts .mail:hover {
+.footer .footer-content .contacts .mail:hover {
   color: #fddcc4;
 }
 
-footer .footer-content .contacts .phone {
+.footer .footer-content .contacts .phone {
   padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,15 +265,15 @@ footer .footer-content .contacts .phone {
   color: #f1cdb3;
 }
 
-footer .footer-content .contacts .phone img {
+.footer .footer-content .contacts .phone img {
   padding-right: 20px;
 }
 
-footer .footer-content .contacts .phone:hover {
+.footer .footer-content .contacts .phone:hover {
   color: #fddcc4;
 }
 
-footer .locations {
+.footer .locations {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,13 +284,13 @@ footer .locations {
   padding: 16px 160px 60px 0px;
 }
 
-footer .locations h3 {
+.footer .locations h3 {
   color: #ffffff;
   width: 270px;
   height: 90px;
 }
 
-footer .locations .boston {
+.footer .locations .boston {
   padding-top: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,15 +302,15 @@ footer .locations .boston {
   color: #f1cdb3;
 }
 
-footer .locations .boston img {
+.footer .locations .boston img {
   padding-right: 20px;
 }
 
-footer .locations .boston:hover {
+.footer .locations .boston:hover {
   color: #fddcc4;
 }
 
-footer .locations .london {
+.footer .locations .london {
   padding-top: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,11 +322,11 @@ footer .locations .london {
   color: #f1cdb3;
 }
 
-footer .locations .london img {
+.footer .locations .london img {
   padding-right: 20px;
 }
 
-footer .locations .london:hover {
+.footer .locations .london:hover {
   color: #fddcc4;
 }
 

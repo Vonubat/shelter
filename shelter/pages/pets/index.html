@@ -4,7 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/normalize.css/normalize.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Our Pets</title>
   </head>
-  <body></body>
+  <body>
+    <div class="bg-wrapper">
+      <section class="bg-header-content"></section>
+      <section class="bg-pets"></section>
+      <section class="bg-footer"></section>
+    </div>
+    <div class="wrapper">
+      <h1>Cozy House</h1>
+      <header>
+        <a href="javascript:void(0);" class="logo">
+          <div class="title">Cozy House</div>
+          <div class="subtitle">Shelter for pets in Boston</div>
+        </a>
+        <nav class="nav-menu">
+          <ul>
+            <li>
+              <a class="nav-unique" href="#about">About the shelter</a>
+              <div class="border-unique"></div>
+            </li>
+            <li>
+              <a class="nav-others" href="../pets/index.html">Our pets</a>
+              <div class="border-others"></div>
+            </li>
+            <li>
+              <a class="nav-others" href="#help">Help the shelter</a>
+              <div class="border-others"></div>
+            </li>
+            <li>
+              <a class="nav-others" href="#footer">Contacts</a>
+              <div class="border-others"></div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="pets" id="pets">
+        <div class="pets-content">
+          <h3>Our friends who <br />are looking for a house</h3>
+          <div class="slider">
+            <div class="button-arrow back">&#10142;</div>
+            <div class="card Katrine">
+              <img src="../../assets/img/pets-katrine.png" alt="" />
+              <div class="name">Katrine</div>
+              <div class="button-secondary">Learn more</div>
+            </div>
+            <div class="card Jennifer">
+              <img src="../../assets/img/pets-jennifer.png" alt="" />
+              <div class="name">Jennifer</div>
+              <div class="button-secondary">Learn more</div>
+            </div>
+            <div class="card Woody">
+              <img src="../../assets/img/pets-woody.png" alt="" />
+              <div class="name">Woody</div>
+              <div class="button-secondary">Learn more</div>
+            </div>
+            <div class="button-arrow forward">&#10142;</div>
+          </div>
+          <a href="../pets/index.html" class="button-primary"
+            >Get to know the rest</a
+          >
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="footer-content">
+          <div class="contacts">
+            <h3>For questions and suggestions</h3>
+            <a href="mailto:email@shelter.com" class="mail"
+              ><img src="../../assets/icons/icon-email.png" alt="e-mail" />
+              <h4>email@shelter.com</h4></a
+            >
+            <a href="tel:+136745677554" class="phone"
+              ><img src="../../assets/icons/icon-phone.png" alt="telephone" />
+              <h4>+13 674 567 75 54</h4></a
+            >
+          </div>
+          <div class="locations">
+            <h3>We are waiting for your visit</h3>
+            <a
+              href="https://goo.gl/maps/8ghAVdWFVCSSR9Mn9"
+              class="boston"
+              target="_blank"
+            >
+              <img
+                src="../../assets/icons/icon-marker.png"
+                alt="address in Boston"
+              />
+              <h4>1 Central Street, Boston (entrance from the store)</h4></a
+            >
+            <a
+              href="https://goo.gl/maps/cGsYoyD3rjM4zMHi7"
+              class="london"
+              target="_blank"
+              ><img
+                src="../../assets/icons/icon-marker.png"
+                alt="address in London"
+              />
+              <h4>18 South Park, London</h4></a
+            >
+          </div>
+          <img src="../../assets/img/footer-puppy.png" alt="" />
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

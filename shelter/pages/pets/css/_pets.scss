@@ -1,0 +1,82 @@
+.bg-pets {
+  background: $color-light-l;
+  min-height: 877px;
+}
+
+.pets {
+  width: 100%;
+
+  .pets-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 40px 100px;
+
+    h3 {
+      color: $color-dark-l;
+      width: 400px;
+      height: 90px;
+      text-align: center;
+    }
+
+    .slider {
+      display: flex;
+      align-items: center;
+      width: 1200px;
+      padding-top: 60px;
+
+      .button-arrow {
+        @include button-arrow();
+      }
+
+      .back {
+        transform: rotate(180deg);
+      }
+
+      .card {
+        @include card;
+        &:hover {
+          .button-secondary {
+            background: $color-primary-light;
+          }
+        }
+      }
+
+      .Katrine {
+        margin-left: 53px;
+      }
+
+      .Jennifer {
+        margin-left: 90px;
+        margin-right: 90px;
+      }
+
+      .Woody {
+        margin-right: 53px;
+      }
+
+      .button-secondary {
+        @include button-secondary();
+        margin-top: 30px;
+      }
+
+      .name {
+        font-family: Georgia;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: $color-dark-l;
+        margin-top: 30px;
+      }
+    }
+
+    .button-primary {
+      @include button-primary();
+      width: 261px;
+      height: 52px;
+      margin-top: 60px;
+    }
+  }
+}
