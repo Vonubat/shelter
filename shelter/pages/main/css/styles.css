@@ -78,13 +78,16 @@
 }
 
 .about {
+  width: 100%;
+}
+
+.about .about-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
   padding: 80px 40px 100px;
 }
 
@@ -98,7 +101,7 @@
           flex-direction: column;
   width: 430px;
   height: 380px;
-  padding: 14px 175px 14px 120px;
+  padding: 14px 0px 14px 120px;
 }
 
 .about .content h3 {
@@ -142,6 +145,89 @@
 
 .help {
   width: 100%;
+}
+
+.help .help-content {
+  padding: 90px 40px;
+}
+
+.help h3 {
+  color: #545454;
+  width: 308px;
+  height: 90px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.help .list1 {
+  margin: 60px 87px 0px 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help .list2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 55px 87px 0px 87px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help .list-items {
+  text-align: center;
+}
+
+.help .list-items h4 {
+  color: #545454;
+  padding-top: 30px;
+}
+
+.help .pet-food {
+  padding: 0;
+}
+
+.help .transportation {
+  padding: 0 60px;
+}
+
+.help .toys {
+  padding: 0 60px;
+}
+
+.help .bowls-and-cups {
+  padding: 0 60px;
+}
+
+.help .shampoos {
+  padding: 0;
+}
+
+.help .vitamins {
+  padding-left: 85px;
+}
+
+.help .medecines {
+  padding: 0 60px;
+}
+
+.help .collars-leashes {
+  padding: 0 60px;
+}
+
+.help .sleeping-areas {
+  padding-right: 85px;
 }
 
 .bg-pets {
@@ -556,6 +642,10 @@
 }
 
 /* main block */
+body {
+  overflow-x: hidden;
+}
+
 .bg-wrapper {
   position: relative;
   width: 100vw;

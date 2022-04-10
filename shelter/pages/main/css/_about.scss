@@ -4,17 +4,20 @@
 }
 
 .about {
-  display: flex;
-  justify-content: center;
   width: 100%;
-  padding: 80px 40px 100px;
+
+  .about-content {
+    display: flex;
+    justify-content: center;
+    padding: 80px 40px 100px;
+  }
 
   .content {
     display: flex;
     flex-direction: column;
     width: 430px;
     height: 380px;
-    padding: 14px 175px 14px 120px;
+    padding: 14px 0px 14px 120px;
 
     h3 {
       color: $color-dark-l;

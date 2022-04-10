@@ -10,6 +10,10 @@
 
 /* main block */
 
+body {
+  overflow-x: hidden;
+}
+
 .bg-wrapper {
   position: relative;
   width: 100vw;
