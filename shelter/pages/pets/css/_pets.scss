@@ -22,59 +22,55 @@
     .cards-container {
       display: flex;
       flex-wrap: wrap;
-      padding-top: 45px;
-      padding-bottom: 45px;
+      margin: 45px 0;
+      padding: 15px 0;
+      max-width: 1200px;
+      min-height: 930px;
+      justify-content: space-between;
+      align-content: space-between;
+      box-sizing: border-box;
 
       .card {
         @include card;
         &:hover {
           .button-secondary {
             background: $color-primary-light;
+            border: 2px solid transparent;
           }
         }
       }
 
-      .Katrine {
-        margin-top: 15px;
-      }
+      // .Katrine {
 
-      .Jennifer {
-        margin-left: 40px;
-        margin-top: 15px;
-      }
+      // }
 
-      .Woody {
-        margin-left: 40px;
-        margin-top: 15px;
-      }
+      // .Jennifer {
 
-      .Sophia {
-        margin-left: 40px;
-        margin-top: 15px;
-      }
+      // }
 
-      .Timmy {
-        margin-top: 30px;
-        margin-bottom: 15px;
-      }
+      // .Woody {
 
-      .Charly {
-        margin-left: 40px;
-        margin-top: 30px;
-        margin-bottom: 15px;
-      }
+      // }
 
-      .Scarlett {
-        margin-left: 40px;
-        margin-top: 30px;
-        margin-bottom: 15px;
-      }
+      // .Sophia {
 
-      .Freddie {
-        margin-left: 40px;
-        margin-top: 30px;
-        margin-bottom: 15px;
-      }
+      // }
+
+      // .Timmy {
+
+      // }
+
+      // .Charly {
+
+      // }
+
+      // .Scarlett {
+
+      // }
+
+      // .Freddie {
+
+      // }
 
       .button-secondary {
         @include button-secondary();

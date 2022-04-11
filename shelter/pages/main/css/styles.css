@@ -179,6 +179,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .donation .donation-content .content .credit-card:hover {
@@ -294,7 +296,7 @@ footer .locations h3 {
 }
 
 footer .locations .boston {
-  padding-top: 33px;
+  padding-top: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,7 +316,7 @@ footer .locations .boston:hover {
 }
 
 footer .locations .london {
-  padding-top: 33px;
+  padding-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,7 +345,7 @@ footer .locations .london:hover {
 }
 
 .help .help-content {
-  padding: 90px 40px;
+  padding: 80px 40px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,6 +376,8 @@ footer .locations .london:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 1026px;
+  height: 113px;
 }
 
 .help .list2 {
@@ -387,6 +391,8 @@ footer .locations .london:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 858px;
+  height: 113px;
 }
 
 .help .list-items {
@@ -396,55 +402,6 @@ footer .locations .london:hover {
 .help .list-items h4 {
   color: #545454;
   padding-top: 30px;
-}
-
-.help .pet-food {
-  padding-right: 60px;
-  height: 113px;
-}
-
-.help .transportation {
-  padding: 0 60px;
-  height: 113px;
-}
-
-.help .toys {
-  padding: 0 60px;
-  height: 113px;
-}
-
-.help .bowls-and-cups {
-  padding: 0 60px;
-  height: 113px;
-  width: 170px;
-}
-
-.help .shampoos {
-  padding-left: 60px;
-  height: 113px;
-}
-
-.help .vitamins {
-  padding-left: 85px;
-  padding-right: 60px;
-  height: 113px;
-}
-
-.help .medecines {
-  padding: 0 60px;
-  height: 113px;
-}
-
-.help .collars-leashes {
-  padding: 0 60px;
-  height: 113px;
-  width: 200px;
-}
-
-.help .sleeping-areas {
-  padding-right: 85px;
-  padding-left: 60px;
-  height: 113px;
 }
 
 .bg-pets {
@@ -484,8 +441,8 @@ footer .locations .london:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1200px;
-  padding-top: 60px;
+  max-width: 1200px;
+  margin-top: 60px;
 }
 
 .pets .pets-content .slider .back {
@@ -527,14 +484,25 @@ footer .locations .london:hover {
           justify-content: flex-start;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .pets .pets-content .slider .card:hover {
   background: #ffffff;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .pets .pets-content .slider .card:hover .button-secondary {
   background: #fddcc4;
+  border: 2px solid transparent;
 }
 
 .pets .pets-content .slider .Katrine {
@@ -567,18 +535,21 @@ footer .locations .london:hover {
   text-decoration: none;
   color: #292929;
   font-family: Georgia;
-  font-size: 16.6px;
+  font-size: 16.8px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.06em;
   border: 2px solid #f1cdb3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
   margin-top: 30px;
 }
 
 .pets .pets-content .slider .button-secondary:hover {
   background: #fddcc4;
+  border: 2px solid transparent;
 }
 
 .pets .pets-content .slider .name {
@@ -610,12 +581,14 @@ footer .locations .london:hover {
   text-decoration: none;
   color: #292929;
   font-family: Georgia;
-  font-size: 16.6px;
+  font-size: 16.8px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.06em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
   width: 261px;
   height: 52px;
   margin-top: 60px;
@@ -623,6 +596,7 @@ footer .locations .london:hover {
 
 .pets .pets-content .button-primary:hover {
   background: #fddcc4;
+  border: 0px solid transparent;
 }
 
 .bg-start-screen {
@@ -711,6 +685,10 @@ footer .locations .london:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 443px;
   list-style-type: none;
   -webkit-margin-before: 0;
           margin-block-start: 0;
@@ -722,10 +700,6 @@ footer .locations .london:hover {
           margin-inline-end: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
-}
-
-.start-screen header .nav-menu ul li {
-  padding: 0px 0px 0px 35px;
 }
 
 .start-screen header .nav-menu ul li a {
@@ -811,7 +785,7 @@ footer .locations .london:hover {
   color: #ffffff;
   width: 310px;
   height: 114px;
-  padding-top: 163px;
+  margin-top: 163px;
 }
 
 .start-screen .start-screen-content .content .subheading {
@@ -825,7 +799,7 @@ footer .locations .london:hover {
   color: #cdcdcd;
   width: 460px;
   height: 72px;
-  padding-top: 42px;
+  margin-top: 42px;
 }
 
 .start-screen .start-screen-content .content .button-primary {
@@ -846,12 +820,14 @@ footer .locations .london:hover {
   text-decoration: none;
   color: #292929;
   font-family: Georgia;
-  font-size: 16.6px;
+  font-size: 16.8px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.06em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
   width: 207px;
   height: 52px;
   margin-top: 42px;
@@ -859,6 +835,7 @@ footer .locations .london:hover {
 
 .start-screen .start-screen-content .content .button-primary:hover {
   background: #fddcc4;
+  border: 0px solid transparent;
 }
 
 /* main block */

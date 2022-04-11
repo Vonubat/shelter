@@ -22,8 +22,12 @@ $color-primary-light: #fddcc4;
   align-items: center;
   justify-content: flex-start;
   box-sizing: border-box;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  transition: background-color 0.3s;
+  transition: transform 0.3s;
   &:hover {
     background: $color-light-xl;
+    transform: scale(1.1, 1.1);
   }
 }
 
@@ -38,13 +42,15 @@ $color-primary-light: #fddcc4;
   text-decoration: none;
   color: $color-dark-3xl;
   font-family: Georgia;
-  font-size: 16.6px;
+  font-size: 16.8px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.06em;
   box-sizing: border-box;
+  transition: background-color 0.3s;
   &:hover {
     background: $color-primary-light;
+    border: 0px solid transparent;
   }
 }
 
@@ -58,14 +64,16 @@ $color-primary-light: #fddcc4;
   text-decoration: none;
   color: $color-dark-3xl;
   font-family: Georgia;
-  font-size: 16.6px;
+  font-size: 16.8px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.06em;
   border: 2px solid #f1cdb3;
   box-sizing: border-box;
+  transition: background-color 0.3s;
   &:hover {
     background: $color-primary-light;
+    border: 2px solid transparent;
   }
 }
 
@@ -78,15 +86,11 @@ $color-primary-light: #fddcc4;
   border-radius: 100px;
   cursor: pointer;
   box-sizing: border-box;
+  transition: background-color 0.3s;
   &:hover {
     background: $color-primary-light;
     border: 2px solid transparent;
   }
-}
-
-@mixin card-hover() {
-  background: #c4c4c4;
-  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 @mixin h3-mobile() {

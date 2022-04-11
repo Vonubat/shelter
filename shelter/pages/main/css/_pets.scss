@@ -21,9 +21,10 @@
 
     .slider {
       display: flex;
+      // flex-wrap: wrap;
       align-items: center;
-      width: 1200px;
-      padding-top: 60px;
+      max-width: 1200px;
+      margin-top: 60px;
 
       .back {
         cursor: pointer;
@@ -45,6 +46,7 @@
         &:hover {
           .button-secondary {
             background: $color-primary-light;
+            border: 2px solid transparent;
           }
         }
       }

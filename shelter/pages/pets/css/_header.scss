@@ -36,6 +36,8 @@ header {
     ul {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      width: 443px;
       list-style-type: none;
       margin-block-start: 0;
       margin-block-end: 0;
@@ -44,7 +46,7 @@ header {
       padding-inline-start: 0;
 
       li {
-        padding: 0px 0px 0px 35px;
+        // padding: 0px 0px 0px 35px;
 
         a {
           /*normal*/
@@ -66,29 +68,6 @@ header {
 
         .nav-unique {
           color: $color-dark-3xl;
-        }
-
-        .nav-black {
-          color: $color-dark-l;
-          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        .nav-black:hover {
-          color: $color-dark-3xl;
-        }
-
-        .nav-black:active {
-          color: $color-dark-l;
-
-          ~ .border-black {
-            flex: none;
-            align-self: stretch;
-            flex-grow: 0;
-            margin: 0px 0px;
-            height: 3px;
-            border-radius: 0px;
-            background: $color-primary;
-          }
         }
 
         .nav-others:active {

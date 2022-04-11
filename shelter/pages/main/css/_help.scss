@@ -7,7 +7,7 @@
   width: 100%;
 
   .help-content {
-    padding: 90px 40px;
+    padding: 80px 40px 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +24,8 @@
     padding: 60px 87px 0px 87px;
     justify-content: space-between;
     align-items: center;
+    width: 1026px;
+    height: 113px;
   }
 
   .list2 {
@@ -31,6 +33,8 @@
     padding: 55px 87px 0px 87px;
     justify-content: space-between;
     align-items: center;
+    width: 858px;
+    height: 113px;
   }
 
   .list-items {
@@ -42,52 +46,39 @@
     }
   }
 
-  .pet-food {
-    padding-right: 60px;
-    height: 113px;
-  }
+  // .pet-food {
 
-  .transportation {
-    padding: 0 60px;
-    height: 113px;
-  }
+  // }
 
-  .toys {
-    padding: 0 60px;
-    height: 113px;
-  }
+  // .transportation {
 
-  .bowls-and-cups {
-    padding: 0 60px;
-    height: 113px;
-    width: 170px;
-  }
+  // }
 
-  .shampoos {
-    padding-left: 60px;
-    height: 113px;
-  }
+  // .toys {
 
-  .vitamins {
-    padding-left: 85px;
-    padding-right: 60px;
-    height: 113px;
-  }
+  // }
 
-  .medecines {
-    padding: 0 60px;
-    height: 113px;
-  }
+  // .bowls-and-cups {
 
-  .collars-leashes {
-    padding: 0 60px;
-    height: 113px;
-    width: 200px;
-  }
+  // }
 
-  .sleeping-areas {
-    padding-right: 85px;
-    padding-left: 60px;
-    height: 113px;
-  }
+  // .shampoos {
+
+  // }
+
+  // .vitamins {
+
+  // }
+
+  // .medecines {
+
+  // }
+
+  // .collars-leashes {
+
+  // }
+
+  // .sleeping-areas {
+
+  // }
 }
