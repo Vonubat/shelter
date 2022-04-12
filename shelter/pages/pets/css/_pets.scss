@@ -109,8 +109,9 @@
 
       .page {
         color: $color-dark-3xl;
+        background: $color-primary;
         &:hover {
-          background: $color-light-l;
+          background: $color-primary; //?
           border: 2px solid $color-primary;
           cursor: default;
         }
