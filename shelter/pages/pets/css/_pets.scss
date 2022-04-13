@@ -114,9 +114,10 @@
 
       .left {
         color: $color-dark-s;
+        border: 2px solid $color-dark-s;
         &:hover {
           background: $color-light-l;
-          border: 2px solid $color-primary;
+          border: 2px solid $color-dark-s;
           cursor: default;
         }
       }

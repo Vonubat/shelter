@@ -389,11 +389,12 @@ footer .locations .london:hover {
 
 .pets .pets-content nav .left {
   color: #cdcdcd;
+  border: 2px solid #cdcdcd;
 }
 
 .pets .pets-content nav .left:hover {
   background: #f6f6f6;
-  border: 2px solid #f1cdb3;
+  border: 2px solid #cdcdcd;
   cursor: default;
 }
 

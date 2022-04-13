@@ -28,6 +28,9 @@
 
       .back {
         cursor: pointer;
+        width: 52px;
+        height: 52px;
+        background: url(../../../assets/icons/button_arrow.png);
         &:hover {
           background: url(../../../assets/icons/button_arrow_hover.png);
         }
@@ -35,7 +38,11 @@
 
       .forward {
         cursor: pointer;
+        width: 52px;
+        height: 52px;
+        background: url(../../../assets/icons/button_arrow.png);
         transform: rotate(180deg);
+
         &:hover {
           background: url(../../../assets/icons/button_arrow_hover.png);
         }

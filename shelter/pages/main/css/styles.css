@@ -447,6 +447,9 @@ footer .locations .london:hover {
 
 .pets .pets-content .slider .back {
   cursor: pointer;
+  width: 52px;
+  height: 52px;
+  background: url(../../../assets/icons/button_arrow.png);
 }
 
 .pets .pets-content .slider .back:hover {
@@ -455,6 +458,9 @@ footer .locations .london:hover {
 
 .pets .pets-content .slider .forward {
   cursor: pointer;
+  width: 52px;
+  height: 52px;
+  background: url(../../../assets/icons/button_arrow.png);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
