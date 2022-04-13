@@ -95,16 +95,11 @@
       a {
         text-decoration: none;
         @include button-arrow();
-        margin: 0 20px;
+        margin: 0 10px;
       }
 
-      .left {
-        color: $color-dark-s;
-        &:hover {
-          background: $color-light-l;
-          border: 2px solid $color-primary;
-          cursor: default;
-        }
+      .right {
+        color: $color-dark-3xl;
       }
 
       .page {
@@ -117,8 +112,13 @@
         }
       }
 
-      .right {
-        color: $color-dark-3xl;
+      .left {
+        color: $color-dark-s;
+        &:hover {
+          background: $color-light-l;
+          border: 2px solid $color-primary;
+          cursor: default;
+        }
       }
     }
   }
