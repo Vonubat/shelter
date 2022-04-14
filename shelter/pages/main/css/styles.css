@@ -72,12 +72,8 @@
   font-display: swap;
 }
 
-.bg-about {
-  background: #ffffff;
-  min-height: 588px;
-}
-
 .about {
+  background: #ffffff;
   width: 100%;
 }
 
@@ -123,12 +119,8 @@
   width: 430px;
 }
 
-.bg-donation {
-  background: #f6f6f6;
-  min-height: 462px;
-}
-
 .donation {
+  background: #f6f6f6;
   width: 100%;
 }
 
@@ -205,12 +197,8 @@
   padding-top: 20px;
 }
 
-.bg-footer {
-  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
-  min-height: 350px;
-}
-
 footer {
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
   width: 100%;
 }
 
@@ -335,12 +323,8 @@ footer .locations .london:hover {
   color: #fddcc4;
 }
 
-.bg-help {
-  background: #ffffff;
-  min-height: 611px;
-}
-
 .help {
+  background: #ffffff;
   width: 100%;
 }
 
@@ -404,12 +388,8 @@ footer .locations .london:hover {
   padding-top: 30px;
 }
 
-.bg-pets {
-  background: #f6f6f6;
-  min-height: 877px;
-}
-
 .pets {
+  background: #f6f6f6;
   width: 100%;
 }
 
@@ -605,12 +585,8 @@ footer .locations .london:hover {
   border: 0px solid transparent;
 }
 
-.bg-start-screen {
-  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
-  min-height: 908px;
-}
-
 .start-screen {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -849,19 +825,8 @@ body {
   overflow-x: hidden;
 }
 
-.bg-wrapper {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
 .wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  max-width: 1280px;
+  width: 1280px;
   margin: 0 auto;
 }
 
