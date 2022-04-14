@@ -17,9 +17,8 @@
 
     .slider {
       display: flex;
-      // flex-wrap: wrap;
       align-items: center;
-      max-width: 1200px;
+      justify-content: space-between;
       margin-top: 60px;
 
       .back {
@@ -90,6 +89,29 @@
       width: 261px;
       height: 52px;
       margin-top: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .pets {
+    .pets-content {
+      padding: 80px 30px 100px;
+
+      .slider {
+        .Katrine {
+          margin-left: 12px;
+        }
+
+        .Jennifer {
+          margin-left: 40px;
+          margin-right: 12px;
+        }
+
+        .Woody {
+          display: none;
+        }
+      }
     }
   }
 }

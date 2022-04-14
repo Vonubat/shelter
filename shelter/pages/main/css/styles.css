@@ -442,7 +442,9 @@ footer .locations .london:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 60px;
 }
 
@@ -604,6 +606,22 @@ footer .locations .london:hover {
 .pets .pets-content .button-primary:hover {
   background: #fddcc4;
   border: 0px solid transparent;
+}
+
+@media screen and (max-width: 1279px) {
+  .pets .pets-content {
+    padding: 80px 30px 100px;
+  }
+  .pets .pets-content .slider .Katrine {
+    margin-left: 12px;
+  }
+  .pets .pets-content .slider .Jennifer {
+    margin-left: 40px;
+    margin-right: 12px;
+  }
+  .pets .pets-content .slider .Woody {
+    display: none;
+  }
 }
 
 .start-screen {
