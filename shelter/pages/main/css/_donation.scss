@@ -6,7 +6,7 @@
     display: flex;
     padding: 80px 182px 100px 183px;
 
-    img {
+    .donation-dog-1280 {
       margin-top: 11px;
       margin-bottom: 10px;
       margin-right: 30px;
@@ -24,6 +24,7 @@
 
       h5 {
         color: $color-dark-l;
+        height: 17px;
         padding-top: 20px;
       }
 
@@ -59,6 +60,26 @@
         color: $color-dark-m;
         padding-top: 20px;
       }
+    }
+  }
+  .donation-dog-768 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .donation {
+    .donation-content {
+      display: flex;
+      padding: 80px 194px 0px;
+
+      .donation-dog-1280 {
+        display: none;
+      }
+    }
+    .donation-dog-768 {
+      display: block;
+      padding: 60px 132px 100px 131px;
     }
   }
 }
