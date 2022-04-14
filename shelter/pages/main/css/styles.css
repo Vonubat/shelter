@@ -587,6 +587,10 @@ footer .locations .london:hover {
 
 .start-screen {
   background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  width: 100%;
+}
+
+.start-screen .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,10 +598,9 @@ footer .locations .london:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
 }
 
-.start-screen header {
+.start-screen .flex-container header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,7 +611,7 @@ footer .locations .london:hover {
   height: 60px;
 }
 
-.start-screen header .logo {
+.start-screen .flex-container header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,7 +629,7 @@ footer .locations .london:hover {
   text-decoration: none;
 }
 
-.start-screen header .logo .title {
+.start-screen .flex-container header .logo .title {
   /* logo_title */
   font-family: "Georgia";
   font-style: normal;
@@ -638,7 +641,7 @@ footer .locations .london:hover {
   color: #f1cdb3;
 }
 
-.start-screen header .logo .subtitle {
+.start-screen .flex-container header .logo .subtitle {
   /* logo_subtitle */
   font-family: "Arial";
   font-style: normal;
@@ -650,7 +653,7 @@ footer .locations .london:hover {
   color: #ffffff;
 }
 
-.start-screen header .nav-menu {
+.start-screen .flex-container header .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,7 +662,7 @@ footer .locations .london:hover {
           align-items: center;
 }
 
-.start-screen header .nav-menu ul {
+.start-screen .flex-container header .nav-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,7 +687,7 @@ footer .locations .london:hover {
           padding-inline-start: 0;
 }
 
-.start-screen header .nav-menu ul li a {
+.start-screen .flex-container header .nav-menu ul li a {
   /*normal*/
   /* paragraph-l */
   font-family: "Arial";
@@ -698,7 +701,7 @@ footer .locations .london:hover {
   text-decoration: none;
 }
 
-.start-screen header .nav-menu ul li .border-unique {
+.start-screen .flex-container header .nav-menu ul li .border-unique {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -713,15 +716,15 @@ footer .locations .london:hover {
   background: #f1cdb3;
 }
 
-.start-screen header .nav-menu ul li .nav-unique {
+.start-screen .flex-container header .nav-menu ul li .nav-unique {
   color: #fafafa;
 }
 
-.start-screen header .nav-menu ul li .nav-others:active {
+.start-screen .flex-container header .nav-menu ul li .nav-others:active {
   color: #fafafa;
 }
 
-.start-screen header .nav-menu ul li .nav-others:active ~ .border-others {
+.start-screen .flex-container header .nav-menu ul li .nav-others:active ~ .border-others {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -736,11 +739,11 @@ footer .locations .london:hover {
   background: #f1cdb3;
 }
 
-.start-screen header .nav-menu ul li .nav-others:hover {
+.start-screen .flex-container header .nav-menu ul li .nav-others:hover {
   color: #fafafa;
 }
 
-.start-screen .start-screen-content {
+.start-screen .flex-container .start-screen-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -750,7 +753,7 @@ footer .locations .london:hover {
   padding: 60px 40px 0px;
 }
 
-.start-screen .start-screen-content .content {
+.start-screen .flex-container .start-screen-content .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -763,14 +766,14 @@ footer .locations .london:hover {
           flex-direction: column;
 }
 
-.start-screen .start-screen-content .content h2 {
+.start-screen .flex-container .start-screen-content .content h2 {
   color: #ffffff;
   width: 310px;
   height: 114px;
   margin-top: 163px;
 }
 
-.start-screen .start-screen-content .content .subheading {
+.start-screen .flex-container .start-screen-content .content .subheading {
   /* paragraph-l */
   font-family: "Arial";
   font-style: normal;
@@ -784,7 +787,7 @@ footer .locations .london:hover {
   margin-top: 42px;
 }
 
-.start-screen .start-screen-content .content .button-primary {
+.start-screen .flex-container .start-screen-content .content .button-primary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,7 +818,7 @@ footer .locations .london:hover {
   margin-top: 42px;
 }
 
-.start-screen .start-screen-content .content .button-primary:hover {
+.start-screen .flex-container .start-screen-content .content .button-primary:hover {
   background: #fddcc4;
   border: 0px solid transparent;
 }
@@ -826,7 +829,7 @@ body {
 }
 
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 

@@ -10,73 +10,55 @@ header {
     justify-content: space-between;
     box-sizing: border-box;
     padding: 30px 40px;
-  }
 
-  .logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    height: 60px;
-
-    .title {
-      @include logo-title();
-      color: $color-dark-l;
-    }
-
-    .subtitle {
-      @include logo_subtitle();
-      color: $color-dark-3xl;
-    }
-  }
-
-  .nav-menu {
-    display: flex;
-    align-items: center;
-
-    ul {
+    .logo {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
-      width: 443px;
-      list-style-type: none;
-      margin-block-start: 0;
-      margin-block-end: 0;
-      margin-inline-start: 0;
-      margin-inline-end: 0;
-      padding-inline-start: 0;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+      height: 60px;
 
-      li {
-        // padding: 0px 0px 0px 35px;
+      .title {
+        @include logo-title();
+        color: $color-dark-l;
+      }
 
-        a {
-          /*normal*/
-          @include paragraph-l();
-          color: $color-dark-l;
-          cursor: pointer;
-          text-decoration: none;
-        }
+      .subtitle {
+        @include logo_subtitle();
+        color: $color-dark-3xl;
+      }
+    }
 
-        .border-unique {
-          flex: none;
-          align-self: stretch;
-          flex-grow: 0;
-          margin: 0px 0px;
-          height: 3px;
-          border-radius: 0px;
-          background: $color-primary;
-        }
+    .nav-menu {
+      display: flex;
+      align-items: center;
 
-        .nav-unique {
-          color: $color-dark-3xl;
-        }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 443px;
+        list-style-type: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-inline-start: 0;
 
-        .nav-others:active {
-          color: $color-dark-l;
+        li {
+          // padding: 0px 0px 0px 35px;
 
-          ~ .border-others {
+          a {
+            /*normal*/
+            @include paragraph-l();
+            color: $color-dark-l;
+            cursor: pointer;
+            text-decoration: none;
+          }
+
+          .border-unique {
             flex: none;
             align-self: stretch;
             flex-grow: 0;
@@ -85,10 +67,28 @@ header {
             border-radius: 0px;
             background: $color-primary;
           }
-        }
 
-        .nav-others:hover {
-          color: $color-dark-3xl;
+          .nav-unique {
+            color: $color-dark-3xl;
+          }
+
+          .nav-others:active {
+            color: $color-dark-l;
+
+            ~ .border-others {
+              flex: none;
+              align-self: stretch;
+              flex-grow: 0;
+              margin: 0px 0px;
+              height: 3px;
+              border-radius: 0px;
+              background: $color-primary;
+            }
+          }
+
+          .nav-others:hover {
+            color: $color-dark-3xl;
+          }
         }
       }
     }

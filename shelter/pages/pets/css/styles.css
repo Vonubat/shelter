@@ -403,7 +403,7 @@ header .flex-container {
   padding: 30px 40px;
 }
 
-header .logo {
+header .flex-container .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,7 +422,7 @@ header .logo {
   height: 60px;
 }
 
-header .logo .title {
+header .flex-container .logo .title {
   /* logo_title */
   font-family: "Georgia";
   font-style: normal;
@@ -434,7 +434,7 @@ header .logo .title {
   color: #545454;
 }
 
-header .logo .subtitle {
+header .flex-container .logo .subtitle {
   /* logo_subtitle */
   font-family: "Arial";
   font-style: normal;
@@ -446,7 +446,7 @@ header .logo .subtitle {
   color: #292929;
 }
 
-header .nav-menu {
+header .flex-container .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,7 +455,7 @@ header .nav-menu {
           align-items: center;
 }
 
-header .nav-menu ul {
+header .flex-container .nav-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,7 +480,7 @@ header .nav-menu ul {
           padding-inline-start: 0;
 }
 
-header .nav-menu ul li a {
+header .flex-container .nav-menu ul li a {
   /*normal*/
   /* paragraph-l */
   font-family: "Arial";
@@ -494,7 +494,7 @@ header .nav-menu ul li a {
   text-decoration: none;
 }
 
-header .nav-menu ul li .border-unique {
+header .flex-container .nav-menu ul li .border-unique {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -509,15 +509,15 @@ header .nav-menu ul li .border-unique {
   background: #f1cdb3;
 }
 
-header .nav-menu ul li .nav-unique {
+header .flex-container .nav-menu ul li .nav-unique {
   color: #292929;
 }
 
-header .nav-menu ul li .nav-others:active {
+header .flex-container .nav-menu ul li .nav-others:active {
   color: #545454;
 }
 
-header .nav-menu ul li .nav-others:active ~ .border-others {
+header .flex-container .nav-menu ul li .nav-others:active ~ .border-others {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -532,7 +532,7 @@ header .nav-menu ul li .nav-others:active ~ .border-others {
   background: #f1cdb3;
 }
 
-header .nav-menu ul li .nav-others:hover {
+header .flex-container .nav-menu ul li .nav-others:hover {
   color: #292929;
 }
 
@@ -542,7 +542,7 @@ body {
 }
 
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
