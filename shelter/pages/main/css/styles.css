@@ -750,6 +750,8 @@ footer .locations .london:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 60px 40px 0px;
 }
 
@@ -821,6 +823,37 @@ footer .locations .london:hover {
 .start-screen .flex-container .start-screen-content .content .button-primary:hover {
   background: #fddcc4;
   border: 0px solid transparent;
+}
+
+.start-screen .flex-container .start-screen-puppy-768 {
+  display: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .start-screen .flex-container header {
+    padding: 30px 30px 0px;
+  }
+  .start-screen .flex-container .start-screen-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 60px 100px 0px 99px;
+  }
+  .start-screen .flex-container .start-screen-content .content h2 {
+    margin-top: 0px;
+  }
+  .start-screen .flex-container .start-screen-content .content .button-primary {
+    margin-left: 126px;
+  }
+  .start-screen .flex-container .start-screen-content .start-screen-puppy-1280 {
+    display: none;
+  }
+  .start-screen .flex-container .start-screen-puppy-768 {
+    display: block;
+    margin: 100px 0px 0px calc(50% - 569px / 2 + 70px);
+    width: 569px;
+    height: 593px;
+  }
 }
 
 /* main block */

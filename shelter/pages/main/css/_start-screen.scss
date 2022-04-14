@@ -97,6 +97,7 @@
     .start-screen-content {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       padding: 60px 40px 0px;
 
       .content {
@@ -125,6 +126,43 @@
           height: 52px;
           margin-top: 42px;
         }
+      }
+    }
+    .start-screen-puppy-768 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .start-screen {
+    .flex-container {
+      header {
+        padding: 30px 30px 0px;
+      }
+
+      .start-screen-content {
+        justify-content: center;
+        padding: 60px 100px 0px 99px;
+
+        .content {
+          h2 {
+            margin-top: 0px;
+          }
+
+          .button-primary {
+            margin-left: 126px;
+          }
+        }
+        .start-screen-puppy-1280 {
+          display: none;
+        }
+      }
+      .start-screen-puppy-768 {
+        display: block;
+        margin: 100px 0px 0px calc(50% - 569px / 2 + 70px);
+        width: 569px;
+        height: 593px;
       }
     }
   }
