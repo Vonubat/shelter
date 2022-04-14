@@ -5,6 +5,7 @@
   .about-content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 80px 40px 100px;
   }
 
@@ -26,6 +27,28 @@
       color: $color-dark-xl;
       padding-top: 25px;
       width: 430px;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .about {
+    .about-content {
+      padding: 80px 166px 100px 165px;
+    }
+
+    .content {
+      order: -1;
+      padding: 0px 3px 0px 4px;
+
+      .subheading {
+        padding-top: 25px;
+        width: 430px;
+      }
+    }
+
+    .about-pets {
+      margin-top: 80px;
     }
   }
 }

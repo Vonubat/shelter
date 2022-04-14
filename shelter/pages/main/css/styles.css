@@ -84,6 +84,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 80px 40px 100px;
 }
 
@@ -117,6 +119,25 @@
   color: #4c4c4c;
   padding-top: 25px;
   width: 430px;
+}
+
+@media screen and (max-width: 1279px) {
+  .about .about-content {
+    padding: 80px 166px 100px 165px;
+  }
+  .about .content {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding: 0px 3px 0px 4px;
+  }
+  .about .content .subheading {
+    padding-top: 25px;
+    width: 430px;
+  }
+  .about .about-pets {
+    margin-top: 80px;
+  }
 }
 
 .donation {
