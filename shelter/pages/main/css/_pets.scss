@@ -30,9 +30,10 @@
         cursor: pointer;
         width: 52px;
         height: 52px;
-        background: url(../../../assets/icons/button_arrow.png);
+        background-image: url(../../../assets/icons/button_arrow.png);
+        transition: all 0.3s;
         &:hover {
-          background: url(../../../assets/icons/button_arrow_hover.png);
+          background-image: url(../../../assets/icons/button_arrow_hover.png);
         }
       }
 
@@ -40,9 +41,9 @@
         cursor: pointer;
         width: 52px;
         height: 52px;
-        background: url(../../../assets/icons/button_arrow.png);
+        background-image: url(../../../assets/icons/button_arrow.png);
+        transition: all 0.3s;
         transform: rotate(180deg);
-
         &:hover {
           background: url(../../../assets/icons/button_arrow_hover.png);
         }

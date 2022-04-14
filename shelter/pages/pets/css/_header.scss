@@ -1,9 +1,15 @@
 .bg-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background: $color-light-xl;
   min-height: 120px;
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   max-width: 100%;
