@@ -536,6 +536,12 @@ header .flex-container .nav-menu ul li .nav-others:hover {
   color: #292929;
 }
 
+@media screen and (max-width: 1279px) {
+  header .flex-container {
+    padding: 30px;
+  }
+}
+
 /* main block */
 body {
   overflow-x: hidden;
