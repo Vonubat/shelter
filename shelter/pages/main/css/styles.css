@@ -123,6 +123,13 @@
 
 @media screen and (max-width: 1279px) {
   .about .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 80px 166px 100px 165px;
   }
   .about .content {
@@ -133,7 +140,6 @@
   }
   .about .content .subheading {
     padding-top: 25px;
-    width: 430px;
   }
   .about .about-pets {
     margin-top: 80px;
@@ -149,6 +155,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 80px 182px 100px 183px;
 }
 
@@ -217,6 +226,8 @@
   line-height: 18px;
   color: #b2b2b2;
   padding-top: 20px;
+  width: 380px;
+  height: 72px;
 }
 
 .donation .donation-dog-768 {
@@ -228,14 +239,15 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 80px 194px 0px;
+    padding: 80px calc(194 / 768 * 100%) 0px;
   }
   .donation .donation-content .donation-dog-1280 {
     display: none;
   }
   .donation .donation-dog-768 {
     display: block;
-    padding: 60px 132px 100px 131px;
+    padding: 60px 0 100px 0;
+    margin: 0 auto;
   }
 }
 
@@ -335,6 +347,8 @@ footer .footer-content .locations .boston {
           align-items: center;
   text-decoration: none;
   color: #f1cdb3;
+  width: 302px;
+  height: 46px;
 }
 
 footer .footer-content .locations .boston img {
@@ -372,6 +386,9 @@ footer .footer-puppy-768 {
 @media screen and (max-width: 1279px) {
   footer .footer-content {
     padding: 30px 30px 0px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   footer .footer-content .contacts {
     padding: 0px 60px 0px 34px;
@@ -384,7 +401,8 @@ footer .footer-puppy-768 {
   }
   footer .footer-puppy-768 {
     display: block;
-    padding: 65px 234px 0px;
+    padding-top: 65px;
+    margin: 0 auto;
   }
 }
 

@@ -4,6 +4,7 @@
 
   .donation-content {
     display: flex;
+    justify-content: center;
     padding: 80px 182px 100px 183px;
 
     .donation-dog-1280 {
@@ -59,6 +60,8 @@
         line-height: 18px;
         color: $color-dark-m;
         padding-top: 20px;
+        width: 380px;
+        height: 72px;
       }
     }
   }
@@ -71,7 +74,7 @@
   .donation {
     .donation-content {
       display: flex;
-      padding: 80px 194px 0px;
+      padding: 80px calc(194 / 768 * 100%) 0px;
 
       .donation-dog-1280 {
         display: none;
@@ -79,7 +82,9 @@
     }
     .donation-dog-768 {
       display: block;
-      padding: 60px 132px 100px 131px;
+      padding: 60px 0 100px 0;
+
+      margin: 0 auto;
     }
   }
 }

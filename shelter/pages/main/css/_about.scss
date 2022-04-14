@@ -34,6 +34,8 @@
 @media screen and (max-width: 1279px) {
   .about {
     .about-content {
+      flex-direction: column;
+      align-items: center;
       padding: 80px 166px 100px 165px;
     }
 
@@ -43,7 +45,6 @@
 
       .subheading {
         padding-top: 25px;
-        width: 430px;
       }
     }
 
