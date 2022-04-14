@@ -363,50 +363,150 @@ footer .locations .london:hover {
           align-items: center;
 }
 
-.help h3 {
+.help .help-content h3 {
   color: #545454;
   text-align: center;
   width: 320px;
   height: 90px;
 }
 
-.help .list1 {
+.help .help-content .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 60px 87px 0px 87px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 1026px;
-  height: 113px;
+  width: 1026x;
+  height: 281px;
 }
 
-.help .list2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 55px 87px 0px 87px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 858px;
-  height: 113px;
-}
-
-.help .list-items {
+.help .help-content .list-items {
   text-align: center;
+  height: 113px;
 }
 
-.help .list-items h4 {
+.help .help-content .list-items h4 {
   color: #545454;
   padding-top: 30px;
+}
+
+.help .help-content .pet-food {
+  margin-right: 60px;
+  width: 82px;
+}
+
+.help .help-content .transportation {
+  margin-left: 60px;
+  margin-right: 60px;
+  width: 150px;
+}
+
+.help .help-content .toys {
+  margin-left: 60px;
+  margin-right: 60px;
+  width: 60px;
+}
+
+.help .help-content .bowls-and-cups {
+  margin-left: 60px;
+  margin-right: 60px;
+  width: 153px;
+}
+
+.help .help-content .shampoos {
+  margin-left: 60px;
+  width: 101px;
+}
+
+.help .help-content .vitamins {
+  margin-left: 84px;
+  margin-right: 60px;
+  margin-top: 55px;
+  width: 89px;
+}
+
+.help .help-content .medecines {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 55px;
+  width: 101px;
+}
+
+.help .help-content .collars-leashes {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 55px;
+  width: 165px;
+}
+
+.help .help-content .sleeping-areas {
+  margin-left: 60px;
+  margin-right: 84px;
+  margin-top: 55px;
+  width: 143px;
+}
+
+@media screen and (max-width: 1279px) {
+  .help .help-content {
+    padding: 80px 69px 100px;
+  }
+  .help .help-content .list {
+    padding: 60px 0px 0px 0px;
+    width: 630px;
+    height: 449px;
+  }
+  .help .help-content .list-items {
+    width: 170px;
+    height: 113px;
+  }
+  .help .help-content .pet-food {
+    margin-right: 30px;
+  }
+  .help .help-content .transportation {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .help .help-content .toys {
+    margin-left: 30px;
+    margin-right: 0px;
+  }
+  .help .help-content .bowls-and-cups {
+    margin-left: 0px;
+    margin-right: 30px;
+    margin-top: 55px;
+  }
+  .help .help-content .shampoos {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 55px;
+  }
+  .help .help-content .vitamins {
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 55px;
+  }
+  .help .help-content .medecines {
+    margin-left: 0px;
+    margin-right: 30px;
+    margin-top: 55px;
+  }
+  .help .help-content .collars-leashes {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 55px;
+  }
+  .help .help-content .sleeping-areas {
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 55px;
+  }
 }
 
 .pets {
@@ -978,7 +1078,7 @@ h4 {
   font-size: 20px;
   line-height: 115%;
   /* identical to box height, or 23px */
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
 }
 
 h5 {
