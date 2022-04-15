@@ -382,6 +382,72 @@ footer .locations .london:hover {
   cursor: default;
 }
 
+@media screen and (max-width: 1279px) {
+  .pets .pets-content {
+    padding: 60px 30px 70px;
+  }
+  .pets .pets-content h3 {
+    padding-top: 20px;
+  }
+  .pets .pets-content .cards-container {
+    margin: 30px 64px 40px;
+    padding: 0;
+    min-height: 1365px;
+  }
+  .pets .pets-content .cards-container .Scarlett {
+    display: none;
+  }
+  .pets .pets-content .cards-container .Freddie {
+    display: none;
+  }
+  .pets .pets-content .cards-container .button-secondary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 45px;
+    border-radius: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #292929;
+    font-family: Georgia;
+    font-size: 16.8px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    border: 2px solid #f1cdb3;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+  }
+  .pets .pets-content .cards-container .button-secondary:hover {
+    background: #fddcc4;
+    border: 2px solid transparent;
+  }
+  .pets .pets-content .cards-container .name {
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #545454;
+    margin-top: 30px;
+  }
+  .pets .pets-content nav {
+    margin-top: 40px;
+    margin-bottom: 6px;
+  }
+}
+
 header {
   background: #ffffff;
   width: 100%;
