@@ -227,6 +227,73 @@ footer .footer-puppy-768 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  footer .footer-content {
+    padding: 30px 10px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-content .contacts {
+    padding: 0px 11px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-content .contacts h3 {
+    /* h3-mobile */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 32px */
+    letter-spacing: 0.06em;
+    width: 278px;
+    height: 64px;
+    text-align: center;
+  }
+  footer .footer-content .locations {
+    padding: 40px 0px 0px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  footer .footer-content .locations h3 {
+    /* h3-mobile */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 32px */
+    letter-spacing: 0.06em;
+    width: 270px;
+    height: 64px;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  footer .footer-content .locations .boston {
+    padding-top: 40px;
+  }
+  footer .footer-content .locations .london {
+    padding-top: 40px;
+  }
+  footer .footer-puppy-768 {
+    display: block;
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 260px;
+    height: 269px;
+  }
+}
+
 .pets {
   background: #f6f6f6;
   width: 100%;
