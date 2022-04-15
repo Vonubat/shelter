@@ -73,7 +73,6 @@
 @media screen and (max-width: 1279px) {
   .donation {
     .donation-content {
-      display: flex;
       padding: 80px calc(194 / 768 * 100%) 0px;
 
       .donation-dog-1280 {
@@ -85,6 +84,73 @@
       padding: 60px 0 100px 0;
 
       margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .donation {
+    .donation-content {
+      padding: 42px 10px 0px;
+
+      .content {
+        width: 300px;
+        align-items: center;
+
+        h3 {
+          @include h3-mobile;
+          height: 64px;
+          width: 220px;
+          text-align: center;
+        }
+
+        h5 {
+          font-family: "Georgia";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14.5px;
+          height: 24px;
+          padding-top: 20px;
+          width: 273px;
+          letter-spacing: 0.01em;
+        }
+
+        .credit-card {
+          width: 281px;
+          height: 43px;
+
+          h4 {
+            color: $color-dark-l;
+            /* h5 reset*/
+            font-size: 0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            font-weight: 0;
+            /* h5 new */
+            font-family: "Georgia";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 110%;
+            /* identical to box height, or 17px */
+            letter-spacing: 0.06em;
+          }
+        }
+
+        .lorem {
+          width: 280px;
+          height: 90px;
+          text-align: justify;
+        }
+      }
+    }
+    .donation-dog-768 {
+      display: block;
+      padding: 42px 30px;
+      width: 260px;
+      height: 135.2px;
     }
   }
 }

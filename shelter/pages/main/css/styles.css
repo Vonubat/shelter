@@ -272,9 +272,6 @@
 
 @media screen and (max-width: 1279px) {
   .donation .donation-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding: 80px calc(194 / 768 * 100%) 0px;
   }
   .donation .donation-content .donation-dog-1280 {
@@ -284,6 +281,78 @@
     display: block;
     padding: 60px 0 100px 0;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .donation .donation-content {
+    padding: 42px 10px 0px;
+  }
+  .donation .donation-content .content {
+    width: 300px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .donation .donation-content .content h3 {
+    /* h3-mobile */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 32px */
+    letter-spacing: 0.06em;
+    height: 64px;
+    width: 220px;
+    text-align: center;
+  }
+  .donation .donation-content .content h5 {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.5px;
+    height: 24px;
+    padding-top: 20px;
+    width: 273px;
+    letter-spacing: 0.01em;
+  }
+  .donation .donation-content .content .credit-card {
+    width: 281px;
+    height: 43px;
+  }
+  .donation .donation-content .content .credit-card h4 {
+    color: #545454;
+    /* h5 reset*/
+    font-size: 0;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+    -webkit-margin-end: 0;
+            margin-inline-end: 0;
+    font-weight: 0;
+    /* h5 new */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    letter-spacing: 0.06em;
+  }
+  .donation .donation-content .content .lorem {
+    width: 280px;
+    height: 90px;
+    text-align: justify;
+  }
+  .donation .donation-dog-768 {
+    display: block;
+    padding: 42px 30px;
+    width: 260px;
+    height: 135.2px;
   }
 }
 
@@ -942,6 +1011,7 @@ footer .footer-puppy-768 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 270px;
   }
   .pets .pets-content .slider .back {
     margin-right: 40px;
