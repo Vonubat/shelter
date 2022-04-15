@@ -313,34 +313,20 @@
     font-weight: 400;
     font-size: 14.5px;
     height: 24px;
-    padding-top: 20px;
     width: 273px;
     letter-spacing: 0.01em;
+    padding-top: 20px;
   }
   .donation .donation-content .content .credit-card {
     width: 281px;
     height: 43px;
   }
   .donation .donation-content .content .credit-card h4 {
-    color: #545454;
-    /* h5 reset*/
-    font-size: 0;
-    -webkit-margin-before: 0;
-            margin-block-start: 0;
-    -webkit-margin-after: 0;
-            margin-block-end: 0;
-    -webkit-margin-start: 0;
-            margin-inline-start: 0;
-    -webkit-margin-end: 0;
-            margin-inline-end: 0;
-    font-weight: 0;
-    /* h5 new */
     font-family: "Georgia";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 110%;
-    /* identical to box height, or 17px */
     letter-spacing: 0.06em;
   }
   .donation .donation-content .content .lorem {
@@ -508,6 +494,73 @@ footer .footer-puppy-768 {
     display: block;
     padding-top: 65px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-content {
+    padding: 30px 10px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-content .contacts {
+    padding: 0px 11px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-content .contacts h3 {
+    /* h3-mobile */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 32px */
+    letter-spacing: 0.06em;
+    width: 278px;
+    height: 64px;
+    text-align: center;
+  }
+  footer .footer-content .locations {
+    padding: 40px 0px 0px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  footer .footer-content .locations h3 {
+    /* h3-mobile */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 32px */
+    letter-spacing: 0.06em;
+    width: 270px;
+    height: 64px;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  footer .footer-content .locations .boston {
+    padding-top: 40px;
+  }
+  footer .footer-content .locations .london {
+    padding-top: 40px;
+  }
+  footer .footer-puppy-768 {
+    display: block;
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 260px;
+    height: 269px;
   }
 }
 
@@ -700,24 +753,11 @@ footer .footer-puppy-768 {
     height: 555px;
   }
   .help .help-content .list h4 {
-    /* h5 reset*/
-    font-size: 0;
-    -webkit-margin-before: 0;
-            margin-block-start: 0;
-    -webkit-margin-after: 0;
-            margin-block-end: 0;
-    -webkit-margin-start: 0;
-            margin-inline-start: 0;
-    -webkit-margin-end: 0;
-            margin-inline-end: 0;
-    font-weight: 0;
-    /* h5 new */
     font-family: "Georgia";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 110%;
-    /* identical to box height, or 17px */
     letter-spacing: 0.06em;
     padding-top: 20px;
   }

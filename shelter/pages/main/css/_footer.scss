@@ -120,3 +120,53 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  footer {
+    .footer-content {
+      padding: 30px 10px 0px;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+
+      .contacts {
+        padding: 0px 11px;
+        align-items: center;
+
+        h3 {
+          @include h3-mobile;
+          width: 278px;
+          height: 64px;
+          text-align: center;
+        }
+      }
+      .locations {
+        padding: 40px 0px 0px;
+        align-items: stretch;
+
+        h3 {
+          @include h3-mobile;
+          width: 270px;
+          height: 64px;
+          text-align: center;
+          align-self: center;
+        }
+
+        .boston {
+          padding-top: 40px;
+        }
+
+        .london {
+          padding-top: 40px;
+        }
+      }
+    }
+    .footer-puppy-768 {
+      display: block;
+      padding-top: 40px;
+      margin: 0 auto;
+      width: 260px;
+      height: 269px;
+    }
+  }
+}
