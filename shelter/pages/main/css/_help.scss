@@ -161,3 +161,105 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .help {
+    .help-content {
+      padding: 0;
+
+      h3 {
+        @include h3-mobile;
+        text-align: center;
+        width: 225px;
+        height: 64px;
+        margin-top: 42px;
+      }
+
+      .list {
+        padding: 42px 15px;
+        width: 290px;
+        height: 555px;
+
+        h4 {
+          /* h5 reset*/
+          font-size: 0;
+          margin-block-start: 0;
+          margin-block-end: 0;
+          margin-inline-start: 0;
+          margin-inline-end: 0;
+          font-weight: 0;
+          /* h5 new */
+          font-family: "Georgia";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 110%;
+          /* identical to box height, or 17px */
+          letter-spacing: 0.06em;
+          padding-top: 20px;
+        }
+
+        img {
+          height: 50px;
+          width: 50px;
+        }
+      }
+
+      .list-items {
+        width: 130px;
+        height: 87px;
+      }
+
+      .pet-food {
+        margin-right: 15px;
+      }
+
+      .transportation {
+        margin-left: 15px;
+        margin-right: 0px;
+      }
+
+      .toys {
+        margin-left: 0px;
+        margin-right: 15px;
+        margin-top: 30px;
+      }
+
+      .bowls-and-cups {
+        margin-left: 15px;
+        margin-right: 0px;
+        margin-top: 30px;
+      }
+
+      .shampoos {
+        margin-left: 0px;
+        margin-right: 15px;
+        margin-top: 30px;
+      }
+
+      .vitamins {
+        margin-left: 15px;
+        margin-right: 0px;
+        margin-top: 30px;
+      }
+
+      .medecines {
+        margin-left: 0px;
+        margin-right: 15px;
+        margin-top: 30px;
+      }
+
+      .collars-leashes {
+        margin-left: 15px;
+        margin-right: 0px;
+        margin-top: 30px;
+      }
+
+      .sleeping-areas {
+        margin-left: 0px;
+        margin-right: 160px;
+        margin-top: 30px;
+      }
+    }
+  }
+}

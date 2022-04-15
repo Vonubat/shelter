@@ -607,6 +607,103 @@ footer .footer-puppy-768 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .help .help-content {
+    padding: 0;
+  }
+  .help .help-content h3 {
+    /* h3-mobile */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 32px */
+    letter-spacing: 0.06em;
+    text-align: center;
+    width: 225px;
+    height: 64px;
+    margin-top: 42px;
+  }
+  .help .help-content .list {
+    padding: 42px 15px;
+    width: 290px;
+    height: 555px;
+  }
+  .help .help-content .list h4 {
+    /* h5 reset*/
+    font-size: 0;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+    -webkit-margin-end: 0;
+            margin-inline-end: 0;
+    font-weight: 0;
+    /* h5 new */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    letter-spacing: 0.06em;
+    padding-top: 20px;
+  }
+  .help .help-content .list img {
+    height: 50px;
+    width: 50px;
+  }
+  .help .help-content .list-items {
+    width: 130px;
+    height: 87px;
+  }
+  .help .help-content .pet-food {
+    margin-right: 15px;
+  }
+  .help .help-content .transportation {
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+  .help .help-content .toys {
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-top: 30px;
+  }
+  .help .help-content .bowls-and-cups {
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .help .help-content .shampoos {
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-top: 30px;
+  }
+  .help .help-content .vitamins {
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .help .help-content .medecines {
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-top: 30px;
+  }
+  .help .help-content .collars-leashes {
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .help .help-content .sleeping-areas {
+    margin-left: 0px;
+    margin-right: 160px;
+    margin-top: 30px;
+  }
+}
+
 .pets {
   background: #f6f6f6;
   width: 100%;
