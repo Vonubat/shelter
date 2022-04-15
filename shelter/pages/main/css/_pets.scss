@@ -86,7 +86,7 @@
 
     .button-primary {
       @include button-primary();
-      width: 261px;
+      width: 260px;
       height: 52px;
       margin-top: 60px;
     }
@@ -111,6 +111,51 @@
         .Woody {
           display: none;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pets {
+    .pets-content {
+      padding: 42px 10px;
+
+      h3 {
+        @include h3-mobile;
+        width: 300px;
+        height: 64px;
+      }
+
+      .slider {
+        margin-top: 42px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .back {
+          margin-right: 40px;
+          margin-top: 20px;
+        }
+
+        .forward {
+          margin-left: 40px;
+          margin-top: 20px;
+        }
+        .Katrine {
+          margin: 0;
+          order: -1;
+        }
+
+        .Jennifer {
+          display: none;
+        }
+
+        .Woody {
+          display: none;
+        }
+      }
+      .button-primary {
+        margin-top: 42px;
       }
     }
   }
