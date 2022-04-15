@@ -141,7 +141,7 @@ footer .footer-content .contacts .phone:hover {
   color: #fddcc4;
 }
 
-footer .locations {
+footer .footer-content .locations {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,14 +152,36 @@ footer .locations {
   padding: 16px 160px 60px 0px;
 }
 
-footer .locations h3 {
+footer .footer-content .locations h3 {
   color: #ffffff;
   width: 270px;
   height: 90px;
 }
 
-footer .locations .boston {
-  padding-top: 34px;
+footer .footer-content .locations .boston {
+  padding-top: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #f1cdb3;
+  width: 302px;
+  height: 46px;
+}
+
+footer .footer-content .locations .boston img {
+  padding-right: 20px;
+}
+
+footer .footer-content .locations .boston:hover {
+  color: #fddcc4;
+}
+
+footer .footer-content .locations .london {
+  padding-top: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,32 +192,39 @@ footer .locations .boston {
   color: #f1cdb3;
 }
 
-footer .locations .boston img {
+footer .footer-content .locations .london img {
   padding-right: 20px;
 }
 
-footer .locations .boston:hover {
+footer .footer-content .locations .london:hover {
   color: #fddcc4;
 }
 
-footer .locations .london {
-  padding-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  color: #f1cdb3;
+footer .footer-puppy-768 {
+  display: none;
 }
 
-footer .locations .london img {
-  padding-right: 20px;
-}
-
-footer .locations .london:hover {
-  color: #fddcc4;
+@media screen and (max-width: 1279px) {
+  footer .footer-content {
+    padding: 30px 30px 0px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-content .contacts {
+    padding: 0px 60px 0px 34px;
+  }
+  footer .footer-content .locations {
+    padding: 0px 34px 0px 0px;
+  }
+  footer .footer-content .footer-puppy-1280 {
+    display: none;
+  }
+  footer .footer-puppy-768 {
+    display: block;
+    padding-top: 65px;
+    margin: 0 auto;
+  }
 }
 
 .pets {
