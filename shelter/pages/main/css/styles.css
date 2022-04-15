@@ -89,7 +89,7 @@
   padding: 80px 40px 100px;
 }
 
-.about .content {
+.about .about-content .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,13 +102,13 @@
   padding: 14px 0px 14px 120px;
 }
 
-.about .content h3 {
+.about .about-content .content h3 {
   color: #545454;
   width: 370px;
   height: 90px;
 }
 
-.about .content .subheading {
+.about .about-content .content .subheading {
   /* paragraph-l */
   font-family: "Arial";
   font-style: normal;
@@ -132,17 +132,53 @@
             align-items: center;
     padding: 80px 166px 100px 165px;
   }
-  .about .content {
+  .about .about-content .content {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
     padding: 0px 3px 0px 4px;
   }
-  .about .content .subheading {
-    padding-top: 25px;
-  }
-  .about .about-pets {
+  .about .about-content .about-pets {
     margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 42px 10px;
+  }
+  .about .about-content .content {
+    width: 300px;
+    height: 494px;
+    padding: 0px;
+  }
+  .about .about-content .content h3 {
+    /* h3-mobile */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 32px */
+    letter-spacing: 0.15em;
+    text-align: center;
+    width: 300px;
+  }
+  .about .about-content .content .subheading {
+    width: 270px;
+    text-align: justify;
+  }
+  .about .about-content .about-pets {
+    margin-top: 42px;
+    width: 260px;
+    height: 354px;
   }
 }
 
