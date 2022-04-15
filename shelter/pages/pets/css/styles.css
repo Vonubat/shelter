@@ -488,6 +488,7 @@ footer .footer-puppy-768 {
   .pets .pets-content .cards-container {
     margin: 30px 64px 40px;
     padding: 0;
+    min-height: 1365px;
   }
   .pets .pets-content .cards-container .Scarlett {
     display: none;
@@ -495,56 +496,55 @@ footer .footer-puppy-768 {
   .pets .pets-content .cards-container .Freddie {
     display: none;
   }
-  .pets .pets-content .cards-container .button-secondary {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 15px 45px;
-    border-radius: 100px;
-    cursor: pointer;
-    text-decoration: none;
-    color: #292929;
-    font-family: Georgia;
-    font-size: 16.8px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0.06em;
-    border: 2px solid #f1cdb3;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-    margin-top: 30px;
-  }
-  .pets .pets-content .cards-container .button-secondary:hover {
-    background: #fddcc4;
-    border: 2px solid transparent;
-  }
-  .pets .pets-content .cards-container .name {
-    font-family: Georgia;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: #545454;
-    margin-top: 30px;
-  }
   .pets .pets-content nav {
     margin-bottom: 6px;
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 767px) {
+  .pets .pets-content {
+    padding: 42px 10px;
+  }
+  .pets .pets-content h3 {
+    /* h3-mobile */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 32px */
+    letter-spacing: 0.06em;
+    width: 300px;
+    height: 64px;
+    padding-top: 0px;
+  }
   .pets .pets-content .cards-container {
-    min-height: 1365px;
+    margin: 42px 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pets .pets-content .cards-container .Sophia {
+    display: none;
+  }
+  .pets .pets-content .cards-container .Timmy {
+    display: none;
+  }
+  .pets .pets-content .cards-container .Charly {
+    display: none;
+  }
+  .pets .pets-content .cards-container .Scarlett {
+    display: none;
+  }
+  .pets .pets-content .cards-container .Freddie {
+    display: none;
+  }
+  .pets .pets-content nav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .pets .pets-content nav a {
+    margin: 0 5px;
   }
 }
 

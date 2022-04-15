@@ -133,6 +133,7 @@
       .cards-container {
         margin: 30px 64px 40px;
         padding: 0;
+        min-height: 1365px;
 
         // .Katrine {
 
@@ -165,22 +166,6 @@
         .Freddie {
           display: none;
         }
-
-        .button-secondary {
-          @include button-secondary();
-          margin-top: 30px;
-        }
-
-        .name {
-          font-family: Georgia;
-          font-size: 20px;
-          font-weight: 400;
-          line-height: 23px;
-          letter-spacing: 0.06em;
-          text-align: center;
-          color: $color-dark-l;
-          margin-top: 30px;
-        }
       }
 
       nav {
@@ -190,12 +175,61 @@
   }
 }
 
-// for smooth transition
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 767px) {
   .pets {
     .pets-content {
+      padding: 42px 10px;
+
+      h3 {
+        @include h3-mobile;
+        width: 300px;
+        height: 64px;
+        padding-top: 0px;
+      }
+
       .cards-container {
-        min-height: 1365px;
+        margin: 42px 15px;
+        justify-content: center;
+
+        // .Katrine {
+
+        // }
+
+        // .Jennifer {
+
+        // }
+
+        // .Woody {
+
+        // }
+
+        .Sophia {
+          display: none;
+        }
+
+        .Timmy {
+          display: none;
+        }
+
+        .Charly {
+          display: none;
+        }
+
+        .Scarlett {
+          display: none;
+        }
+
+        .Freddie {
+          display: none;
+        }
+      }
+
+      nav {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        a {
+          margin: 0 5px;
+        }
       }
     }
   }
