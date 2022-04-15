@@ -838,7 +838,7 @@ footer .footer-puppy-768 {
   font-size: 32px;
   line-height: 110%;
   /* identical to box height, or 35px */
-  letter-spacing: 0.06em;
+  letter-spacing: 0.055em;
   color: #f1cdb3;
 }
 
@@ -942,6 +942,10 @@ footer .footer-puppy-768 {
 
 .start-screen .flex-container header .nav-menu ul li .nav-others:hover {
   color: #fafafa;
+}
+
+.start-screen .flex-container header .burger {
+  display: none;
 }
 
 .start-screen .flex-container .start-screen-content {
@@ -1054,6 +1058,62 @@ footer .footer-puppy-768 {
     margin: 100px 0px 0px calc(50% - 569px / 2 + 70px);
     width: 569px;
     height: 593px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .start-screen .flex-container header {
+    padding: 30px 53px 0px 10px;
+  }
+  .start-screen .flex-container header .nav-menu {
+    display: none;
+  }
+  .start-screen .flex-container header .burger {
+    display: block;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .start-screen .flex-container .start-screen-content {
+    padding: 60px 10px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .start-screen .flex-container .start-screen-content .content h2 {
+    /* h3-mobile */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 32px */
+    letter-spacing: 0.15em;
+    width: 300px;
+    height: 64px;
+    text-align: center;
+  }
+  .start-screen .flex-container .start-screen-content .content .subheading {
+    width: 300px;
+    height: 96px;
+    margin-top: 42px;
+    text-align: center;
+  }
+  .start-screen .flex-container .start-screen-content .content .button-primary {
+    margin: 42px 46.5px 0px;
+  }
+  .start-screen .flex-container .start-screen-content .start-screen-puppy-1280 {
+    display: block;
+    width: 260px;
+    height: 272px;
+    margin: 105px 0px 0px 40px;
+  }
+  .start-screen .flex-container .start-screen-puppy-768 {
+    display: none;
   }
 }
 

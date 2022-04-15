@@ -524,7 +524,7 @@ header .flex-container .logo .title {
   font-size: 32px;
   line-height: 110%;
   /* identical to box height, or 35px */
-  letter-spacing: 0.06em;
+  letter-spacing: 0.055em;
   color: #545454;
 }
 
