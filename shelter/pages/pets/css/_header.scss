@@ -11,6 +11,10 @@ header {
     box-sizing: border-box;
     padding: 30px 40px;
 
+    .burger {
+      display: none;
+    }
+
     .logo {
       display: flex;
       flex-direction: column;
@@ -99,6 +103,23 @@ header {
   header {
     .flex-container {
       padding: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    .flex-container {
+      padding: 30px 50px 30px 10px;
+      .nav-menu {
+        display: none;
+      }
+
+      .burger {
+        display: block;
+        align-self: center;
+        cursor: pointer;
+      }
     }
   }
 }

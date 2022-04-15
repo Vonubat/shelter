@@ -421,7 +421,6 @@ footer .footer-puppy-768 {
   .pets .pets-content .cards-container {
     margin: 30px 64px 40px;
     padding: 0;
-    min-height: 1365px;
   }
   .pets .pets-content .cards-container .Scarlett {
     display: none;
@@ -476,6 +475,12 @@ footer .footer-puppy-768 {
   }
 }
 
+@media screen and (max-width: 990px) {
+  .pets .pets-content .cards-container {
+    min-height: 1365px;
+  }
+}
+
 header {
   background: #ffffff;
   width: 100%;
@@ -495,6 +500,10 @@ header .flex-container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 30px 40px;
+}
+
+header .flex-container .burger {
+  display: none;
 }
 
 header .flex-container .logo {
@@ -633,6 +642,22 @@ header .flex-container .nav-menu ul li .nav-others:hover {
 @media screen and (max-width: 1279px) {
   header .flex-container {
     padding: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .flex-container {
+    padding: 30px 50px 30px 10px;
+  }
+  header .flex-container .nav-menu {
+    display: none;
+  }
+  header .flex-container .burger {
+    display: block;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    cursor: pointer;
   }
 }
 
