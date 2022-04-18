@@ -61,6 +61,7 @@
         width: 300px;
         height: 494px;
         padding: 0px;
+        align-items: center;
 
         h3 {
           @include h3-mobile();
@@ -71,6 +72,7 @@
         .subheading {
           width: 270px;
           text-align: justify;
+          padding-top: 22px;
         }
       }
       .about-pets {

@@ -194,12 +194,13 @@
         align-items: center;
 
         .content {
+          align-items: center;
           h2 {
             @include h3-mobile();
-            width: 300px;
+            width: 250px;
             height: 64px;
             text-align: center;
-            letter-spacing: 0.15em;
+            letter-spacing: 0.06em;
           }
 
           .subheading {
