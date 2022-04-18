@@ -693,6 +693,11 @@ footer .footer-puppy-768 {
     width: 170px;
     height: 113px;
   }
+  .help .help-content .list-items h4 {
+    color: #545454;
+    padding-top: 27px;
+    white-space: nowrap;
+  }
   .help .help-content .pet-food {
     margin-right: 30px;
   }
@@ -766,7 +771,7 @@ footer .footer-puppy-768 {
     font-size: 15px;
     line-height: 110%;
     letter-spacing: 0.06em;
-    padding-top: 20px;
+    padding-top: 18px;
   }
   .help .help-content .list img {
     height: 50px;
@@ -955,10 +960,11 @@ footer .footer-puppy-768 {
   text-decoration: none;
   color: #292929;
   font-family: Georgia;
-  font-size: 16.5px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.06em;
+  white-space: nowrap;
   border: 2px solid #f1cdb3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1001,10 +1007,11 @@ footer .footer-puppy-768 {
   text-decoration: none;
   color: #292929;
   font-family: Georgia;
-  font-size: 16.5px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.06em;
+  white-space: nowrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: background-color 0.3s;
@@ -1311,10 +1318,11 @@ footer .footer-puppy-768 {
   text-decoration: none;
   color: #292929;
   font-family: Georgia;
-  font-size: 16.5px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.06em;
+  white-space: nowrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: background-color 0.3s;
