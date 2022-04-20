@@ -6,45 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../assets/styles/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script async src="js/script.js"></script>
     <title>Our Pets</title>
   </head>
   <body>
     <h1>Cozy House</h1>
-    <header>
+    <header class="header">
       <div class="wrapper flex-container">
         <a href="../main/index.html" class="logo">
           <div class="title">Cozy House</div>
           <div class="subtitle">Shelter for pets in Boston</div>
         </a>
         <nav class="nav-menu">
-          <ul>
-            <li>
-              <a class="nav-others" href="../main/index.html#about"
+          <ul class="ul">
+            <li class="li">
+              <a class="nav-others a" href="../main/index.html#about"
                 >About the shelter</a
               >
               <div class="border-others"></div>
             </li>
-            <li>
-              <a class="nav-unique" href="../pets/index.html">Our pets</a>
+            <li class="li">
+              <a class="nav-unique a" href="../pets/index.html">Our pets</a>
               <div class="border-unique"></div>
             </li>
-            <li>
-              <a class="nav-others" href="../main/index.html#help"
+            <li class="li">
+              <a class="nav-others a" href="../main/index.html#help"
                 >Help the shelter</a
               >
               <div class="border-others"></div>
             </li>
-            <li>
-              <a class="nav-others" href="#footer">Contacts</a>
+            <li class="li">
+              <a class="nav-others a" href="#footer">Contacts</a>
               <div class="border-others"></div>
             </li>
           </ul>
         </nav>
-        <nav class="burger">
-          <img src="../../assets/icons/Burger_our_pets.png" alt="" />
-        </nav>
       </div>
     </header>
+    <img
+      class="burger-icon"
+      src="../../assets/icons/Burger_our_pets.png"
+      alt=""
+    />
+    <nav class="burger">
+      <header class="burger-header">
+        <a href="index.html" class="burger-logo">
+          <div class="burger-title">Cozy House</div>
+          <div class="burger-subtitle">Shelter for pets in Boston</div>
+        </a>
+      </header>
+      <ul class="burger-ul">
+        <li class="burger-li">
+          <a class="nav-others a-burger" href="../main/index.html#about"
+            >About the shelter</a
+          >
+          <div class="border-others"></div>
+        </li>
+        <li class="burger-li">
+          <a class="nav-unique a-burger" href="../pets/index.html">Our pets</a>
+          <div class="border-unique"></div>
+        </li>
+        <li class="burger-li">
+          <a class="nav-others a-burger" href="../main/index.html#help"
+            >Help the shelter</a
+          >
+          <div class="border-others"></div>
+        </li>
+        <li class="burger-li">
+          <a class="nav-others a-burger" href="#footer">Contacts</a>
+          <div class="border-others"></div>
+        </li>
+      </ul>
+    </nav>
+
     <section class="pets" id="pets">
       <div class="wrapper">
         <div class="pets-content">
