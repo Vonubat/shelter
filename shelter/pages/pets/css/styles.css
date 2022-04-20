@@ -762,7 +762,7 @@ footer .footer-puppy-768 {
     display: block;
     width: 320px;
     height: 100vh;
-    background-color: #292929;
+    background: #ffffff;
     right: 0px;
     top: 0px;
     z-index: 10;
@@ -807,7 +807,7 @@ footer .footer-puppy-768 {
     line-height: 110%;
     /* identical to box height, or 35px */
     letter-spacing: 0.055em;
-    color: #f1cdb3;
+    color: #545454;
   }
   .burger .burger-header .burger-logo .burger-subtitle {
     /* logo_subtitle */
@@ -818,7 +818,7 @@ footer .footer-puppy-768 {
     line-height: 15px;
     /* identical to box height */
     letter-spacing: 0.1em;
-    color: #ffffff;
+    color: #292929;
   }
   .burger .burger-ul {
     position: absolute;
@@ -858,7 +858,7 @@ footer .footer-puppy-768 {
     font-weight: 400;
     font-size: 32px;
     line-height: 160%;
-    color: #cdcdcd;
+    color: #545454;
     cursor: pointer;
     text-decoration: none;
   }
@@ -877,10 +877,10 @@ footer .footer-puppy-768 {
     background: #f1cdb3;
   }
   .burger .burger-ul .burger-li .nav-unique {
-    color: #fafafa;
+    color: #292929;
   }
   .burger .burger-ul .burger-li .nav-others:active {
-    color: #fafafa;
+    color: #545454;
   }
   .burger .burger-ul .burger-li .nav-others:active ~ .border-others {
     -webkit-box-flex: 0;
@@ -897,7 +897,7 @@ footer .footer-puppy-768 {
     background: #f1cdb3;
   }
   .burger .burger-ul .burger-li .nav-others:hover {
-    color: #fafafa;
+    color: #292929;
   }
   .burger.active {
     -webkit-transition: -webkit-transform ease-out 0.5s;

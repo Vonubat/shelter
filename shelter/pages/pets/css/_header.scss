@@ -148,7 +148,7 @@
     display: block;
     width: 320px;
     height: 100vh;
-    background-color: $color-dark-3xl;
+    background: $color-light-xl;
     right: 0px;
     top: 0px;
     z-index: 10;
@@ -173,12 +173,12 @@
 
         .burger-title {
           @include logo-title();
-          color: $color-primary;
+          color: $color-dark-l;
         }
 
         .burger-subtitle {
           @include logo_subtitle();
-          color: $color-light-xl;
+          color: $color-dark-3xl;
         }
       }
     }
@@ -204,7 +204,7 @@
         .a-burger {
           /*normal*/
           @include paragraph-mobile-menu();
-          color: $color-dark-s;
+          color: $color-dark-l;
           cursor: pointer;
           text-decoration: none;
         }
@@ -220,11 +220,11 @@
         }
 
         .nav-unique {
-          color: $color-light-s;
+          color: $color-dark-3xl;
         }
 
         .nav-others:active {
-          color: $color-light-s;
+          color: $color-dark-l;
 
           ~ .border-others {
             flex: none;
@@ -238,7 +238,7 @@
         }
 
         .nav-others:hover {
-          color: $color-light-s;
+          color: $color-dark-3xl;
         }
       }
     }
