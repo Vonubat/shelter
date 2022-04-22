@@ -4,7 +4,7 @@
 const PETS = [
   {
     name: "Jennifer",
-    img: "../../assets/images/jennifer.png",
+    img: "../../assets/img/pets-jennifer.png",
     type: "Dog",
     breed: "Labrador",
     description:
@@ -16,7 +16,7 @@ const PETS = [
   },
   {
     name: "Sophia",
-    img: "../../assets/images/sophia.png",
+    img: "../../assets/img/pets-sofia.png",
     type: "Dog",
     breed: "Shih tzu",
     description:
@@ -28,7 +28,7 @@ const PETS = [
   },
   {
     name: "Woody",
-    img: "../../assets/images/woody.png",
+    img: "../../assets/img/pets-woody.png",
     type: "Dog",
     breed: "Golden Retriever",
     description:
@@ -40,7 +40,7 @@ const PETS = [
   },
   {
     name: "Scarlett",
-    img: "../../assets/images/scarlett.png",
+    img: "../../assets/img/pets-scarlet.png",
     type: "Dog",
     breed: "Jack Russell Terrier",
     description:
@@ -52,7 +52,7 @@ const PETS = [
   },
   {
     name: "Katrine",
-    img: "../../assets/images/katrine.png",
+    img: "../../assets/img/pets-katrine.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -64,7 +64,7 @@ const PETS = [
   },
   {
     name: "Timmy",
-    img: "../../assets/images/timmy.png",
+    img: "../../assets/img/pets-timmy.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -76,7 +76,7 @@ const PETS = [
   },
   {
     name: "Freddie",
-    img: "../../assets/images/freddie.png",
+    img: "../../assets/img/pets-freddie.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -88,7 +88,7 @@ const PETS = [
   },
   {
     name: "Charly",
-    img: "../../assets/images/charly.png",
+    img: "../../assets/img/pets-charly.png",
     type: "Dog",
     breed: "Jack Russell Terrier",
     description:
@@ -142,3 +142,91 @@ function closeBurger(event) {
 
 BTN_ICON.addEventListener("click", openBurger);
 BODY_BG.addEventListener("click", closeBurger);
+
+// Carousel
+
+const BTN_LEFT = document.querySelector("#btn-left");
+const BTN_RIGHT = document.querySelector("#btn-right");
+const ITEMS = document.querySelectorAll("#slider>.items");
+const ITEM_ACTIVE = document.querySelector("#items-active");
+const ITEM_LEFT = document.querySelector("#items-left");
+const ITEM_RIGHT = document.querySelector("#items-right");
+const ITEM_ACTIVE_NAMES = document
+  .querySelector("#items-active")
+  .getElementsByClassName("name");
+const ITEM_LEFT_NAMES = document
+  .querySelector("#items-left")
+  .getElementsByClassName("name");
+const ITEM_RIGHT_NAMES = document
+  .querySelector("#items-right")
+  .getElementsByClassName("name");
+const ITEM_ACTIVE_IMGS = document
+  .querySelector("#items-active")
+  .getElementsByTagName("img");
+const ITEM_LEFT_IMGS = document
+  .querySelector("#items-left")
+  .getElementsByTagName("img");
+const ITEM_RIGHT_IMGS = document
+  .querySelector("#items-right")
+  .getElementsByTagName("img");
+
+function randomizeCards(sideNames, sideImgs) {
+  let uniqueNumber = 0;
+  let tempPETS = PETS.slice();
+
+  for (let i = 0; i < 3; ) {
+    uniqueNumber = Math.floor(Math.random() * (tempPETS.length - 1));
+    if (
+      tempPETS[uniqueNumber].name !== ITEM_ACTIVE_NAMES[0].innerHTML &&
+      tempPETS[uniqueNumber].name !== ITEM_ACTIVE_NAMES[1].innerHTML &&
+      tempPETS[uniqueNumber].name !== ITEM_ACTIVE_NAMES[2].innerHTML
+    ) {
+      sideNames[i].innerHTML = tempPETS[uniqueNumber].name;
+      sideImgs[i].src = tempPETS[uniqueNumber].img;
+      tempPETS.splice(uniqueNumber, 1);
+      i++;
+    } else {
+      continue;
+    }
+  }
+}
+
+const moveLeft = () => {
+  for (const item of ITEMS) {
+    item.classList.add("transition-left");
+  }
+  randomizeCards(ITEM_LEFT_NAMES, ITEM_LEFT_IMGS);
+  BTN_LEFT.removeEventListener("click", moveLeft);
+  BTN_RIGHT.removeEventListener("click", moveRight);
+};
+
+const moveRight = () => {
+  for (const item of ITEMS) {
+    item.classList.add("transition-right");
+  }
+  randomizeCards(ITEM_RIGHT_NAMES, ITEM_RIGHT_IMGS);
+  BTN_RIGHT.removeEventListener("click", moveRight);
+  BTN_LEFT.removeEventListener("click", moveLeft);
+};
+
+BTN_LEFT.addEventListener("click", moveLeft);
+BTN_RIGHT.addEventListener("click", moveRight);
+//once randomizeCards for first visit page or reload
+randomizeCards(ITEM_ACTIVE_NAMES, ITEM_ACTIVE_IMGS);
+
+for (const item of ITEMS) {
+  item.addEventListener("animationend", (animationEvent) => {
+    if (animationEvent.animationName === "move-left") {
+      ITEM_ACTIVE.innerHTML = ITEM_LEFT.innerHTML;
+    } else {
+      ITEM_ACTIVE.innerHTML = ITEM_RIGHT.innerHTML;
+    }
+
+    for (const item of ITEMS) {
+      item.classList.remove("transition-left");
+      item.classList.remove("transition-right");
+    }
+    BTN_LEFT.addEventListener("click", moveLeft);
+    BTN_RIGHT.addEventListener("click", moveRight);
+  });
+}
