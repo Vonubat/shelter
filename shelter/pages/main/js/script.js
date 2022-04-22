@@ -1,5 +1,4 @@
 "use strict";
-// Global environment
 
 const PETS = [
   {
