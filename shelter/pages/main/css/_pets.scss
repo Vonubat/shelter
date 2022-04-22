@@ -92,35 +92,16 @@
       margin-top: 60px;
     }
   }
-}
 
-// Animation for Carousel
-@keyframes move-right {
-  from {
-    left: -990px;
+  .transition-right {
+    animation-name: move-right-1280;
+    animation-duration: 0.5s;
   }
-  to {
-    left: -1980px;
-  }
-}
 
-.transition-right {
-  animation-name: move-right;
-  animation-duration: 0.5s;
-}
-
-@keyframes move-left {
-  from {
-    left: -990px;
+  .transition-left {
+    animation-name: move-left-1280;
+    animation-duration: 0.5s;
   }
-  to {
-    left: 0px;
-  }
-}
-
-.transition-left {
-  animation-name: move-left;
-  animation-duration: 0.5s;
 }
 
 //Media Queries
@@ -130,20 +111,38 @@
     .pets-content {
       padding: 80px 30px 100px;
 
-      .slider {
-        .Katrine {
-          margin-left: 12px;
-        }
+      .wrapper-slider {
+        width: 708px;
 
-        .Jennifer {
-          margin-left: 40px;
+        .back {
           margin-right: 12px;
         }
 
-        .Woody {
-          display: none;
+        .slider {
+          width: 580px;
+
+          .items {
+            left: -592px;
+            gap: 47px;
+
+            .item_2 {
+              display: none;
+            }
+          }
+        }
+        .forward {
+          margin-left: 12px;
         }
       }
+    }
+    .transition-right {
+      animation-name: move-right-768;
+      animation-duration: 0.5s;
+    }
+
+    .transition-left {
+      animation-name: move-left-768;
+      animation-duration: 0.5s;
     }
   }
 }
@@ -159,37 +158,108 @@
         height: 64px;
       }
 
-      .slider {
-        margin-top: 42px;
-        flex-wrap: wrap;
+      .wrapper-slider {
         justify-content: center;
-        max-width: 270px;
+        flex-wrap: wrap;
+        width: 300px;
+        margin-top: 42px;
 
         .back {
           margin-right: 40px;
           margin-top: 20px;
         }
 
+        .slider {
+          width: 270px;
+          order: -1;
+
+          .items {
+            display: flex;
+            position: relative;
+            left: -270px;
+            gap: 0px;
+
+            .item_3 {
+              display: none;
+            }
+          }
+        }
         .forward {
           margin-left: 40px;
           margin-top: 20px;
         }
-        .Katrine {
-          margin: 0;
-          order: -1;
-        }
-
-        .Jennifer {
-          display: none;
-        }
-
-        .Woody {
-          display: none;
+        .button-primary {
+          margin-top: 42px;
         }
       }
       .button-primary {
         margin-top: 42px;
       }
     }
+    .transition-right {
+      animation-name: move-right-320;
+      animation-duration: 0.5s;
+    }
+
+    .transition-left {
+      animation-name: move-left-320;
+      animation-duration: 0.5s;
+    }
+  }
+}
+
+// Animation for Carousel
+
+@keyframes move-right-1280 {
+  from {
+    left: -990px;
+  }
+  to {
+    left: -1980px;
+  }
+}
+
+@keyframes move-left-1280 {
+  from {
+    left: -990px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes move-right-768 {
+  from {
+    left: -592px;
+  }
+  to {
+    left: -1184px;
+  }
+}
+
+@keyframes move-left-768 {
+  from {
+    left: -592px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes move-right-320 {
+  from {
+    left: -270px;
+  }
+  to {
+    left: -540px;
+  }
+}
+
+@keyframes move-left-320 {
+  from {
+    left: -270px;
+  }
+  to {
+    left: 0px;
   }
 }

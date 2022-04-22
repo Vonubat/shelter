@@ -216,7 +216,11 @@ randomizeCards(ITEM_ACTIVE_NAMES, ITEM_ACTIVE_IMGS);
 
 for (const item of ITEMS) {
   item.addEventListener("animationend", (animationEvent) => {
-    if (animationEvent.animationName === "move-left") {
+    if (
+      animationEvent.animationName === "move-left-1280" ||
+      animationEvent.animationName === "move-left-768" ||
+      animationEvent.animationName === "move-left-320"
+    ) {
       ITEM_ACTIVE.innerHTML = ITEM_LEFT.innerHTML;
     } else {
       ITEM_ACTIVE.innerHTML = ITEM_RIGHT.innerHTML;
