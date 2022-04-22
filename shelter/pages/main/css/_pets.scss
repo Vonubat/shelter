@@ -104,8 +104,7 @@
 
   .modal-window-container {
     position: fixed;
-
-    width: 952px;
+    width: 900px;
     height: 552px;
     background-color: transparent;
     transform: translateX(100%);
@@ -115,7 +114,7 @@
       cursor: pointer;
       position: absolute;
       top: -52px;
-      right: 0px;
+      right: -52px;
       min-width: 52px;
       height: 52px;
       background-image: url(../../../assets/icons/modal_close_button.png);
@@ -127,8 +126,7 @@
 
     .modal-window {
       display: flex;
-      order: -1;
-      align-self: flex-end;
+
       align-items: center;
       justify-content: space-between;
       width: 900px;
@@ -146,6 +144,7 @@
       .content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 351px;
         height: 362px;
         margin: 50px 20px 88px 0px;
@@ -242,7 +241,7 @@
     }
 
     .modal-window-container {
-      width: 682px;
+      width: 630px;
       height: fit-content;
 
       .modal-window {
@@ -346,10 +345,10 @@
       animation-duration: 0.5s;
     }
     .modal-window-container {
-      width: 270px;
+      width: 240px;
 
       .close-btn {
-        right: -5px;
+        right: -30px;
       }
 
       .modal-window {
