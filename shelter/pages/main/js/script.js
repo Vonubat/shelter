@@ -234,3 +234,5 @@ for (const item of ITEMS) {
     BTN_RIGHT.addEventListener("click", moveRight);
   });
 }
+
+// Popup
