@@ -1052,11 +1052,9 @@ footer .footer-puppy-768 {
   width: 952px;
   height: 552px;
   background-color: transparent;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  z-index: 30;
 }
 
 .pets .modal-window-container .close-btn {
@@ -1149,7 +1147,7 @@ footer .footer-puppy-768 {
   margin-top: 11px;
 }
 
-.pets .modal-window-container .modal-window .content ul li span {
+.pets .modal-window-container .modal-window .content ul li .features {
   /* h5-modal-window */
   font-family: "Georgia";
   font-style: normal;
@@ -1171,6 +1169,14 @@ footer .footer-puppy-768 {
   /* Needed to add space between the bullet and the text */
   width: 1em;
   /* Also needed for space (tweak if needed) */
+}
+
+.pets .modal-window-container.active {
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 1279px) {
@@ -1244,7 +1250,7 @@ footer .footer-puppy-768 {
     color: #000000;
     margin-top: 5px;
   }
-  .pets .modal-window-container .modal-window .content ul li span {
+  .pets .modal-window-container .modal-window .content ul li .features {
     /* h5-modal-window */
     font-family: "Georgia";
     font-style: normal;
@@ -1326,14 +1332,12 @@ footer .footer-puppy-768 {
   }
   .pets .modal-window-container {
     width: 270px;
-    height: 393px;
   }
   .pets .modal-window-container .close-btn {
     right: 0px;
   }
   .pets .modal-window-container .modal-window {
     width: 240px;
-    height: 341px;
   }
   .pets .modal-window-container .modal-window img {
     display: none;
@@ -1350,8 +1354,20 @@ footer .footer-puppy-768 {
     padding: 10px;
   }
   .pets .modal-window-container .modal-window .content ul {
+    -webkit-margin-before: 15px;
+            margin-block-start: 15px;
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+  .pets .modal-window-container .modal-window .content ul li .features {
+    /* h5-modal-window */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    letter-spacing: 0.06em;
   }
 }
 
