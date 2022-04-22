@@ -315,6 +315,19 @@ function closeModalWindow(event) {
 }
 
 BODY_BG.addEventListener("click", closeModalWindow);
+MODAL_WINDOW.addEventListener("mouseout", (event) => {
+  if (event.currentTarget === MODAL_WINDOW) {
+    CLOSE_BTN.style.backgroundImage =
+      "url(../../assets/icons/modal_close_button-hover.png)";
+  }
+});
+MODAL_WINDOW.addEventListener("mouseover", (event) => {
+  if (event.currentTarget === MODAL_WINDOW) {
+    CLOSE_BTN.style.backgroundImage =
+      "url(../../assets/icons/modal_close_button.png)";
+  }
+});
+
 // create first assocoation cards with modalWindows
 for (const card of CARDS) {
   card.addEventListener("click", openModalWindow);

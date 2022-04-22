@@ -867,7 +867,6 @@ footer .footer-puppy-768 {
 
 .pets .pets-content .wrapper-slider .back {
   cursor: pointer;
-  margin-right: 53px;
   background-image: url(../../../assets/icons/button_arrow.png);
   min-width: 52px;
   height: 52px;
@@ -1060,8 +1059,8 @@ footer .footer-puppy-768 {
 .pets .modal-window-container .close-btn {
   cursor: pointer;
   position: absolute;
-  top: 0px;
-  right: 10px;
+  top: -52px;
+  right: 0px;
   min-width: 52px;
   height: 52px;
   background-image: url(../../../assets/icons/modal_close_button.png);
@@ -1070,14 +1069,18 @@ footer .footer-puppy-768 {
 }
 
 .pets .modal-window-container .close-btn:hover {
-  background: url(../../../assets/icons/modal_close_button-hover.png);
+  background-image: url(../../../assets/icons/modal_close_button-hover.png);
 }
 
 .pets .modal-window-container .modal-window {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1085,7 +1088,7 @@ footer .footer-puppy-768 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 900px;
-  height: 500px;
+  max-height: 500px;
   bottom: 0px;
   left: 0px;
   background-color: #fafafa;
@@ -1110,7 +1113,7 @@ footer .footer-puppy-768 {
           flex-direction: column;
   width: 351px;
   height: 362px;
-  padding: 50px 20px 88px 0px;
+  margin: 50px 20px 88px 0px;
 }
 
 .pets .modal-window-container .modal-window .content h3 {
@@ -1216,11 +1219,12 @@ footer .footer-puppy-768 {
   }
   .pets .modal-window-container {
     width: 682px;
-    height: 402px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .pets .modal-window-container .modal-window {
     width: 630px;
-    height: 350px;
   }
   .pets .modal-window-container .modal-window img {
     width: 350px;
@@ -1228,8 +1232,7 @@ footer .footer-puppy-768 {
   }
   .pets .modal-window-container .modal-window .content {
     width: 260px;
-    height: 303px;
-    padding: 10px 10px 37px 0px;
+    margin: 10px 10px 0px 0px;
   }
   .pets .modal-window-container .modal-window .content h5 {
     color: #000000;
@@ -1334,7 +1337,7 @@ footer .footer-puppy-768 {
     width: 270px;
   }
   .pets .modal-window-container .close-btn {
-    right: 0px;
+    right: -5px;
   }
   .pets .modal-window-container .modal-window {
     width: 240px;
@@ -1350,8 +1353,16 @@ footer .footer-puppy-768 {
         -ms-flex-align: center;
             align-items: center;
     width: 220px;
-    height: 321px;
-    padding: 10px;
+    margin: 10px;
+  }
+  .pets .modal-window-container .modal-window .content h3 {
+    text-align: center;
+  }
+  .pets .modal-window-container .modal-window .content h4 {
+    text-align: center;
+  }
+  .pets .modal-window-container .modal-window .content h5 {
+    text-align: justify;
   }
   .pets .modal-window-container .modal-window .content ul {
     -webkit-margin-before: 15px;

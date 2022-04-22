@@ -24,7 +24,6 @@
 
       .back {
         cursor: pointer;
-        margin-right: 53px;
         background-image: url(../../../assets/icons/button_arrow.png);
         min-width: 52px;
         height: 52px;
@@ -105,6 +104,7 @@
 
   .modal-window-container {
     position: fixed;
+
     width: 952px;
     height: 552px;
     background-color: transparent;
@@ -114,24 +114,25 @@
     .close-btn {
       cursor: pointer;
       position: absolute;
-      top: 0px;
-      right: 10px;
+      top: -52px;
+      right: 0px;
       min-width: 52px;
       height: 52px;
       background-image: url(../../../assets/icons/modal_close_button.png);
       transition: all 0.3s;
       &:hover {
-        background: url(../../../assets/icons/modal_close_button-hover.png);
+        background-image: url(../../../assets/icons/modal_close_button-hover.png);
       }
     }
 
     .modal-window {
-      position: absolute;
       display: flex;
+      order: -1;
+      align-self: flex-end;
       align-items: center;
       justify-content: space-between;
       width: 900px;
-      height: 500px;
+      max-height: 500px;
       bottom: 0px;
       left: 0px;
       background-color: $color-light-s;
@@ -147,7 +148,7 @@
         flex-direction: column;
         width: 351px;
         height: 362px;
-        padding: 50px 20px 88px 0px;
+        margin: 50px 20px 88px 0px;
         h3 {
           color: #000000;
         }
@@ -242,11 +243,10 @@
 
     .modal-window-container {
       width: 682px;
-      height: 402px;
+      height: fit-content;
 
       .modal-window {
         width: 630px;
-        height: 350px;
 
         img {
           width: 350px;
@@ -254,8 +254,8 @@
         }
         .content {
           width: 260px;
-          height: 303px;
-          padding: 10px 10px 37px 0px;
+
+          margin: 10px 10px 0px 0px;
 
           h5 {
             color: #000000;
@@ -347,15 +347,13 @@
     }
     .modal-window-container {
       width: 270px;
-      // max-height: 500px;
 
       .close-btn {
-        right: 0px;
+        right: -5px;
       }
 
       .modal-window {
         width: 240px;
-        // max-height: 500px;
 
         img {
           display: none;
@@ -364,8 +362,18 @@
           justify-content: center;
           align-items: center;
           width: 220px;
-          height: 321px;
-          padding: 10px;
+          margin: 10px;
+
+          h3 {
+            text-align: center;
+          }
+
+          h4 {
+            text-align: center;
+          }
+          h5 {
+            text-align: justify;
+          }
 
           ul {
             margin-block-start: 15px;
