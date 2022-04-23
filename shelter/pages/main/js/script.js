@@ -169,14 +169,17 @@ const ITEM_LEFT_IMGS = document
 const ITEM_RIGHT_IMGS = document
   .querySelector("#items-right")
   .getElementsByTagName("img");
-let CARDS = document.querySelectorAll(".card");
+let cards = document.querySelectorAll(".card");
 
 function randomizeCards(sideNames, sideImgs) {
   let uniqueNumber = 0;
   let tempPETS = PETS.slice();
 
   for (let i = 0; i < 3; ) {
-    uniqueNumber = Math.floor(Math.random() * (tempPETS.length - 1));
+    uniqueNumber = Math.floor(Math.random() * tempPETS.length);
+    if (uniqueNumber == 8) {
+      uniqueNumber = 0;
+    }
     if (
       tempPETS[uniqueNumber].name !== ITEM_ACTIVE_NAMES[0].innerHTML &&
       tempPETS[uniqueNumber].name !== ITEM_ACTIVE_NAMES[1].innerHTML &&
@@ -230,6 +233,7 @@ for (const item of ITEMS) {
     for (const item of ITEMS) {
       item.classList.remove("transition-left");
       item.classList.remove("transition-right");
+      console.log(animationEvent);
     }
     BTN_LEFT.addEventListener("click", moveLeft);
     BTN_RIGHT.addEventListener("click", moveRight);
@@ -242,8 +246,8 @@ for (const item of ITEMS) {
       ITEM_ACTIVE.innerHTML = ITEM_RIGHT.innerHTML;
     */
 
-    CARDS = document.querySelectorAll(".card");
-    for (const card of CARDS) {
+    cards = document.querySelectorAll(".card");
+    for (const card of cards) {
       card.addEventListener("click", openModalWindow);
     }
   });
@@ -256,7 +260,7 @@ const MODAL_WINDOW = document.querySelector(
   "#pets > div > div.modal-window-container"
 );
 const MODAL_FIELD = document.querySelector(
-  "#pets > div > div.modal-window-container > div > div"
+  "#pets > div > div.modal-window-container > div"
 );
 
 let modalName = document.querySelector(
@@ -332,6 +336,6 @@ MODAL_FIELD.addEventListener("mouseover", (event) => {
 });
 
 // create first assocoation cards with modalWindows
-for (const card of CARDS) {
+for (const card of cards) {
   card.addEventListener("click", openModalWindow);
 }

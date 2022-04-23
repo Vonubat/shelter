@@ -24,6 +24,7 @@
 
       .back {
         cursor: pointer;
+        margin-right: 53px;
         background-image: url(../../../assets/icons/button_arrow.png);
         min-width: 52px;
         height: 52px;
@@ -70,6 +71,7 @@
           }
         }
       }
+
       .forward {
         cursor: pointer;
         margin-left: 53px;
