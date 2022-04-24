@@ -159,15 +159,10 @@ let counter = 1;
 let positions = [
   "0px", // to except 0 page number
   "0px",
-  "-1200px",
-  "-2400px",
-  "-3600px",
-  "-4800px",
-  "-6000px",
 ];
 
 function randomizeCards(CARDS_CONTAINERS) {
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 16; i++) {
     let uniqueNumber = 0;
     let tempPETS = PETS.slice();
     let currentContainer = CARDS_CONTAINERS[i];
@@ -187,38 +182,27 @@ function randomizeCards(CARDS_CONTAINERS) {
 }
 
 const changePositions = () => {
+  //positions[0] — to except 0 page number
+  positions = ["0px", "0px"];
   if (window.innerWidth >= 1280) {
-    positions = [
-      "0px", // to except 0 page number
-      "0px",
-      "-1200px",
-      "-2400px",
-      "-3600px",
-      "-4800px",
-      "-6000px",
-    ];
+    let step = 1200;
+    for (let i = 2; i <= 6; i++) {
+      positions.push(parseInt(positions[i - 1]) - step + "px");
+    }
+    console.log(positions);
   } else if ((window.innerWidth < 1280) & (window.innerWidth >= 768)) {
-    positions = [
-      "0px", // to except 0 page number
-      "0px",
-      "-580px",
-      "-1160px",
-      "-1740px",
-      "-2320px",
-      "-2900px",
-    ];
+    let step = 580;
+    for (let i = 2; i <= 8; i++) {
+      positions.push(parseInt(positions[i - 1]) - step + "px");
+    }
+    console.log(positions);
   } else {
-    positions = [
-      "0px", // to except 0 page number
-      "0px",
-      "-270px",
-      "-540px",
-      "-810px",
-      "-1080px",
-      "-1350px",
-    ];
+    let step = 270;
+    for (let i = 2; i <= 16; i++) {
+      positions.push(parseInt(positions[i - 1]) - step + "px");
+    }
+    console.log(positions);
   }
-  // console.log(window.innerWidth);
 };
 
 const moveStart = () => {
@@ -226,7 +210,7 @@ const moveStart = () => {
   pageNumber.innerHTML = counter;
 
   for (const cardContainer of CARDS_CONTAINERS) {
-    cardContainer.style.left = positions[1];
+    cardContainer.style.left = positions[counter];
   }
 
   BTN_RIGHT.removeEventListener("click", moveRight);
@@ -236,11 +220,11 @@ const moveStart = () => {
 };
 
 const moveEnd = () => {
-  counter = 6;
+  counter = positions.length - 1;
   pageNumber.innerHTML = counter;
 
   for (const cardContainer of CARDS_CONTAINERS) {
-    cardContainer.style.left = positions[6];
+    cardContainer.style.left = positions[counter];
   }
 
   BTN_RIGHT.removeEventListener("click", moveRight);
@@ -266,7 +250,7 @@ const moveLeft = () => {
 };
 
 const moveRight = () => {
-  if (counter == 6) {
+  if (counter == positions.length - 1) {
     return;
   }
   counter++;
@@ -289,7 +273,7 @@ for (const cardContainer of CARDS_CONTAINERS) {
     BTN_START.addEventListener("click", moveStart);
     BTN_END.addEventListener("click", moveEnd);
 
-    if (counter !== 1 || counter !== 6) {
+    if (counter !== 1 || counter !== positions.length - 1) {
       BTN_LEFT.style.border = "2px solid #f1cdb3";
       BTN_START.style.border = "2px solid #f1cdb3";
       BTN_RIGHT.style.border = "2px solid #f1cdb3";
@@ -311,7 +295,7 @@ for (const cardContainer of CARDS_CONTAINERS) {
       BTN_LEFT.style.color = "#cdcdcd";
       BTN_START.style.color = "#cdcdcd";
     }
-    if (counter == 6) {
+    if (counter == positions.length - 1) {
       BTN_RIGHT.style.border = "2px solid #cdcdcd";
       BTN_END.style.border = "2px solid #cdcdcd";
       BTN_RIGHT.style.cursor = "default";
@@ -347,7 +331,7 @@ BTN_START.addEventListener("mouseout", (event) => {
 });
 
 BTN_RIGHT.addEventListener("mouseover", (event) => {
-  if (event.currentTarget === BTN_RIGHT && counter !== 6) {
+  if (event.currentTarget === BTN_RIGHT && counter !== positions.length - 1) {
     BTN_RIGHT.style.backgroundColor = "#f1cdb3";
   }
 });
@@ -359,7 +343,7 @@ BTN_RIGHT.addEventListener("mouseout", (event) => {
 });
 
 BTN_END.addEventListener("mouseover", (event) => {
-  if (event.currentTarget === BTN_END && counter !== 6) {
+  if (event.currentTarget === BTN_END && counter !== positions.length - 1) {
     BTN_END.style.backgroundColor = "#f1cdb3";
   }
 });
@@ -371,7 +355,9 @@ BTN_END.addEventListener("mouseout", (event) => {
 });
 
 randomizeCards(CARDS_CONTAINERS);
-setInterval(changePositions, 100);
+changePositions();
+window.addEventListener("resize", changePositions);
+
 BTN_LEFT.addEventListener("click", moveLeft);
 BTN_RIGHT.addEventListener("click", moveRight);
 BTN_START.addEventListener("click", moveStart);
