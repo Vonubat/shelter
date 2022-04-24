@@ -361,3 +361,5 @@ BTN_LEFT.addEventListener("click", moveLeft);
 BTN_RIGHT.addEventListener("click", moveRight);
 BTN_START.addEventListener("click", moveStart);
 BTN_END.addEventListener("click", moveEnd);
+
+// Popup

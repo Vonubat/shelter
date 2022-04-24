@@ -107,7 +107,7 @@
   .modal-window-container {
     position: fixed;
     width: 900px;
-    height: 552px;
+    height: 500px;
     background-color: transparent;
     transform: translateX(100%);
     z-index: 30;
@@ -197,6 +197,7 @@
     top: 50%;
     left: 50%;
     margin-right: -50%;
+    transition: transform 0.5s;
     transform: translate(-50%, -50%);
   }
 }
@@ -244,7 +245,7 @@
 
     .modal-window-container {
       width: 630px;
-      height: fit-content;
+      height: 350px;
 
       .modal-window {
         width: 630px;

@@ -1050,7 +1050,7 @@ footer .footer-puppy-768 {
 .pets .modal-window-container {
   position: fixed;
   width: 900px;
-  height: 552px;
+  height: 500px;
   background-color: transparent;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1177,6 +1177,10 @@ footer .footer-puppy-768 {
   top: 50%;
   left: 50%;
   margin-right: -50%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -1218,9 +1222,7 @@ footer .footer-puppy-768 {
   }
   .pets .modal-window-container {
     width: 630px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 350px;
   }
   .pets .modal-window-container .modal-window {
     width: 630px;
