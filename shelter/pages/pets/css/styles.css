@@ -504,6 +504,144 @@ footer .footer-puppy-768 {
   border: 2px solid #cdcdcd;
 }
 
+.pets .modal-window-container {
+  position: fixed;
+  width: 900px;
+  height: 500px;
+  background-color: transparent;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  z-index: 30;
+}
+
+.pets .modal-window-container .close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: -52px;
+  right: -52px;
+  min-width: 52px;
+  height: 52px;
+  background-image: url(../../../assets/icons/modal_close_button.png);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.pets .modal-window-container .close-btn:hover {
+  background-image: url(../../../assets/icons/modal_close_button-hover.png);
+}
+
+.pets .modal-window-container .modal-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 900px;
+  max-height: 500px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  border-radius: 9px;
+}
+
+.pets .modal-window-container .modal-window img {
+  border-radius: 9px 0px 0px 9px;
+  width: 500px;
+  height: 500px;
+}
+
+.pets .modal-window-container .modal-window .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 351px;
+  height: 362px;
+  margin: 50px 20px 88px 0px;
+}
+
+.pets .modal-window-container .modal-window .content h3 {
+  color: #000000;
+}
+
+.pets .modal-window-container .modal-window .content h4 {
+  color: #000000;
+  padding-top: 10px;
+}
+
+.pets .modal-window-container .modal-window .content h5 {
+  color: #000000;
+  padding-top: 40px;
+}
+
+.pets .modal-window-container .modal-window .content ul {
+  display: block;
+  list-style-type: none;
+  -webkit-margin-before: 29px;
+          margin-block-start: 29px;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.pets .modal-window-container .modal-window .content ul li {
+  color: #000000;
+  margin-top: 11px;
+}
+
+.pets .modal-window-container .modal-window .content ul li .features {
+  /* h5-modal-window */
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 110%;
+  /* identical to box height, or 17px */
+  letter-spacing: 0.06em;
+}
+
+.pets .modal-window-container .modal-window .content ul li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #f1cdb3;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+.pets .modal-window-container.active {
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 1279px) {
   .pets .pets-content {
     padding: 60px 30px 70px;
@@ -530,6 +668,50 @@ footer .footer-puppy-768 {
   }
   .pets nav {
     margin-bottom: 6px;
+  }
+  .pets .modal-window-container {
+    width: 630px;
+    height: 350px;
+  }
+  .pets .modal-window-container .modal-window {
+    width: 630px;
+  }
+  .pets .modal-window-container .modal-window img {
+    width: 350px;
+    height: 350px;
+  }
+  .pets .modal-window-container .modal-window .content {
+    width: 260px;
+    margin: 10px 10px 0px 0px;
+  }
+  .pets .modal-window-container .modal-window .content h5 {
+    color: #000000;
+    padding-top: 20px;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14.3px;
+    /* or 14px */
+    letter-spacing: 0.06em;
+  }
+  .pets .modal-window-container .modal-window .content ul {
+    -webkit-margin-before: 15px;
+            margin-block-start: 15px;
+  }
+  .pets .modal-window-container .modal-window .content ul li {
+    color: #000000;
+    margin-top: 5px;
+  }
+  .pets .modal-window-container .modal-window .content ul li .features {
+    /* h5-modal-window */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    letter-spacing: 0.06em;
   }
 }
 
@@ -576,30 +758,52 @@ footer .footer-puppy-768 {
   .pets nav a {
     margin: 0 5px;
   }
-  .pets nav .right {
-    color: #292929;
+  .pets .modal-window-container {
+    width: 240px;
   }
-  .pets nav .right:hover {
-    background: #f6f6f6;
-    border: 2px solid #f1cdb3;
+  .pets .modal-window-container .close-btn {
+    right: -30px;
   }
-  .pets nav .page {
-    color: #292929;
-    background: #f1cdb3;
-    cursor: default;
+  .pets .modal-window-container .modal-window {
+    width: 240px;
   }
-  .pets nav .page:hover {
-    background: #f1cdb3;
-    border: 2px solid #f1cdb3;
+  .pets .modal-window-container .modal-window img {
+    display: none;
   }
-  .pets nav .left {
-    color: #cdcdcd;
-    border: 2px solid #cdcdcd;
-    cursor: default;
+  .pets .modal-window-container .modal-window .content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 220px;
+    margin: 10px;
   }
-  .pets nav .left:hover {
-    background: #f6f6f6;
-    border: 2px solid #cdcdcd;
+  .pets .modal-window-container .modal-window .content h3 {
+    text-align: center;
+  }
+  .pets .modal-window-container .modal-window .content h4 {
+    text-align: center;
+  }
+  .pets .modal-window-container .modal-window .content h5 {
+    text-align: justify;
+  }
+  .pets .modal-window-container .modal-window .content ul {
+    -webkit-margin-before: 15px;
+            margin-block-start: 15px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .pets .modal-window-container .modal-window .content ul li .features {
+    /* h5-modal-window */
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    letter-spacing: 0.06em;
   }
 }
 

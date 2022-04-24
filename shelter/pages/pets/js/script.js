@@ -363,3 +363,89 @@ BTN_START.addEventListener("click", moveStart);
 BTN_END.addEventListener("click", moveEnd);
 
 // Popup
+
+const CLOSE_BTN = document.querySelector("#close-btn");
+const MODAL_WINDOW = document.querySelector(
+  "#pets > div > div.modal-window-container"
+);
+const MODAL_FIELD = document.querySelector(
+  "#pets > div > div.modal-window-container > div"
+);
+
+let modalName = document.querySelector(
+  "#pets > div > div.modal-window-container> div > div > h3"
+);
+let modalImg = document.querySelector(
+  "#pets > div > div.modal-window-container> div > img"
+);
+let modalTypeBreed = document.querySelector(
+  "#pets > div > div.modal-window-container > div > div > h4"
+);
+let modalDescription = document.querySelector(
+  "#pets > div > div.modal-window-container > div > div > h5"
+);
+let modalAge = document.querySelector("#age");
+let modalInoculations = document.querySelector("#inoculations");
+let modalDiseases = document.querySelector("#diseases");
+let modalParasites = document.querySelector("#parasites");
+let cards = document.querySelectorAll(".card");
+
+function openModalWindow(event) {
+  let currentCardName = event.currentTarget.querySelector(".name").innerHTML;
+
+  for (const pet of PETS) {
+    if (currentCardName === modalName) {
+      break;
+    } else if (pet.name === currentCardName) {
+      modalName.innerHTML = pet.name;
+      modalImg.src = pet.img;
+      modalTypeBreed.innerHTML = pet.type + " - " + pet.breed;
+      modalDescription.innerHTML = pet.description;
+      modalAge.innerHTML = pet.age;
+      modalInoculations.innerHTML = pet.inoculations;
+      modalDiseases.innerHTML = pet.diseases;
+      modalParasites.innerHTML = pet.parasites;
+    } else {
+      continue;
+    }
+  }
+
+  console.log(event.currentTarget);
+
+  MODAL_WINDOW.classList.toggle("active");
+  BODY_BG.classList.toggle("active");
+
+  if (MODAL_WINDOW.classList.contains("active")) {
+    BODY_BG.style.overflowY = "hidden";
+  } else {
+    BODY_BG.style.overflowY = "";
+  }
+}
+
+function closeModalWindow(event) {
+  if (event.target === BODY_BG || event.target == CLOSE_BTN) {
+    MODAL_WINDOW.classList.remove("active");
+    BODY_BG.classList.remove("active");
+    BODY_BG.style.overflowY = "";
+  }
+}
+
+BODY_BG.addEventListener("click", closeModalWindow);
+
+MODAL_FIELD.addEventListener("mouseout", (event) => {
+  if (event.currentTarget === MODAL_FIELD) {
+    CLOSE_BTN.style.backgroundImage =
+      "url(../../assets/icons/modal_close_button-hover.png)";
+  }
+});
+MODAL_FIELD.addEventListener("mouseover", (event) => {
+  if (event.currentTarget === MODAL_FIELD) {
+    CLOSE_BTN.style.backgroundImage =
+      "url(../../assets/icons/modal_close_button.png)";
+  }
+});
+
+// create first assocoation cards with modalWindows
+for (const card of cards) {
+  card.addEventListener("click", openModalWindow);
+}
