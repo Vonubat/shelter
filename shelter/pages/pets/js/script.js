@@ -190,12 +190,22 @@ const changePositions = () => {
     for (let i = 2; i <= 6; i++) {
       positions.push(parseInt(positions[i - 1]) - step + "px");
     }
+    //Checking resize bug
+    if (counter > 6) {
+      counter = 6;
+    }
+    // console.log(counter);
     // console.log(positions);
   } else if ((window.innerWidth < 1280) & (window.innerWidth >= 768)) {
     let step = 580;
     for (let i = 2; i <= 8; i++) {
       positions.push(parseInt(positions[i - 1]) - step + "px");
     }
+    //Checking resize bug
+    if (counter > 8) {
+      counter = 8;
+    }
+    // console.log(counter);
     // console.log(positions);
   } else {
     let step = 270;
@@ -204,10 +214,12 @@ const changePositions = () => {
     }
     // console.log(positions);
   }
-
-  // for (const cardContainer of CARDS_CONTAINERS) {
-  //   cardContainer.style.left = positions[counter];
-  // }
+  //update pageNumber
+  pageNumber.innerHTML = counter;
+  // update position
+  for (const cardContainer of CARDS_CONTAINERS) {
+    cardContainer.style.left = positions[counter];
+  }
 };
 
 const moveStart = () => {
