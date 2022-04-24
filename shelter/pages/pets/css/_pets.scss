@@ -115,50 +115,34 @@
       padding: 60px 30px 70px;
 
       h3 {
-        padding-top: 20px;
+        margin-top: 20px;
       }
 
-      .cards-container {
-        margin: 30px 64px 40px;
-        padding: 0;
-        min-height: 1365px;
+      .wrapper-cards {
+        width: 580px;
+        margin: 30px 0px 40px;
 
-        // .Katrine {
+        .cards-container {
+          .cards {
+            width: 580px;
+            row-gap: 30px;
+            column-gap: 40px;
+            margin: 0px;
 
-        // }
+            .item1 {
+              display: none;
+            }
 
-        // .Jennifer {
-
-        // }
-
-        // .Woody {
-
-        // }
-
-        // .Sophia {
-
-        // }
-
-        // .Timmy {
-
-        // }
-
-        // .Charly {
-
-        // }
-
-        .Scarlett {
-          display: none;
-        }
-
-        .Freddie {
-          display: none;
+            .item2 {
+              display: none;
+            }
+          }
         }
       }
+    }
 
-      nav {
-        margin-bottom: 6px;
-      }
+    nav {
+      margin-bottom: 6px;
     }
   }
 }
@@ -166,57 +150,74 @@
 @media screen and (max-width: 767px) {
   .pets {
     .pets-content {
-      padding: 42px 10px;
+      padding: 42px 10px 42px;
 
       h3 {
-        @include h3-mobile;
+        @include h3-mobile();
         width: 300px;
         height: 64px;
-        padding-top: 0px;
-      }
-
-      .cards-container {
-        margin: 42px 15px;
-        justify-content: center;
-
-        // .Katrine {
-
-        // }
-
-        // .Jennifer {
-
-        // }
-
-        // .Woody {
-
-        // }
-
-        .Sophia {
-          display: none;
-        }
-
-        .Timmy {
-          display: none;
-        }
-
-        .Charly {
-          display: none;
-        }
-
-        .Scarlett {
-          display: none;
-        }
-
-        .Freddie {
-          display: none;
-        }
-      }
-
-      nav {
+        white-space: nowrap;
         margin-top: 0px;
-        margin-bottom: 0px;
-        a {
-          margin: 0 5px;
+      }
+
+      .wrapper-cards {
+        width: 270px;
+        margin: 42px 0px;
+
+        .cards-container {
+          .cards {
+            width: 270px;
+            row-gap: 30px;
+            column-gap: 0px;
+
+            .item3 {
+              display: none;
+            }
+
+            .item4 {
+              display: none;
+            }
+
+            .item5 {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    nav {
+      margin-bottom: 0px;
+
+      a {
+        margin: 0 5px;
+      }
+
+      .right {
+        color: $color-dark-3xl;
+        &:hover {
+          background: $color-light-l;
+          border: 2px solid $color-primary;
+        }
+      }
+
+      .page {
+        color: $color-dark-3xl;
+        background: $color-primary;
+        cursor: default;
+        &:hover {
+          background: $color-primary;
+          border: 2px solid $color-primary;
+        }
+      }
+
+      .left {
+        color: $color-dark-s;
+        border: 2px solid $color-dark-s;
+        cursor: default;
+        &:hover {
+          background: $color-light-l;
+          border: 2px solid $color-dark-s;
         }
       }
     }

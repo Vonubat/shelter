@@ -186,7 +186,40 @@ function randomizeCards(CARDS_CONTAINERS) {
   }
 }
 
-randomizeCards(CARDS_CONTAINERS);
+const changePositions = () => {
+  if (window.innerWidth >= 1280) {
+    positions = [
+      "0px", // to except 0 page number
+      "0px",
+      "-1200px",
+      "-2400px",
+      "-3600px",
+      "-4800px",
+      "-6000px",
+    ];
+  } else if ((window.innerWidth < 1280) & (window.innerWidth >= 768)) {
+    positions = [
+      "0px", // to except 0 page number
+      "0px",
+      "-580px",
+      "-1160px",
+      "-1740px",
+      "-2320px",
+      "-2900px",
+    ];
+  } else {
+    positions = [
+      "0px", // to except 0 page number
+      "0px",
+      "-270px",
+      "-540px",
+      "-810px",
+      "-1080px",
+      "-1350px",
+    ];
+  }
+  // console.log(window.innerWidth);
+};
 
 const moveStart = () => {
   counter = 1;
@@ -337,6 +370,8 @@ BTN_END.addEventListener("mouseout", (event) => {
   }
 });
 
+randomizeCards(CARDS_CONTAINERS);
+setInterval(changePositions, 100);
 BTN_LEFT.addEventListener("click", moveLeft);
 BTN_RIGHT.addEventListener("click", moveRight);
 BTN_START.addEventListener("click", moveStart);
