@@ -101,6 +101,7 @@ const PETS = [
 ];
 
 // Burger menu
+
 const BTN_ICON = document.querySelector("body > img");
 const BURGER_MENU = document.querySelector("body > nav");
 const BODY_BG = document.querySelector("body");
@@ -153,7 +154,6 @@ const BTN_PAGE = document.querySelector("#btn-page");
 const CARDS_CONTAINERS = document.querySelectorAll(
   "#wrapper-cards>.cards-container"
 );
-
 let pageNumber = document.querySelector("#page > h4");
 let counter = 1;
 let positions = [
@@ -184,25 +184,30 @@ function randomizeCards(CARDS_CONTAINERS) {
 const changePositions = () => {
   //positions[0] — to except 0 page number
   positions = ["0px", "0px"];
+
   if (window.innerWidth >= 1280) {
     let step = 1200;
     for (let i = 2; i <= 6; i++) {
       positions.push(parseInt(positions[i - 1]) - step + "px");
     }
-    console.log(positions);
+    // console.log(positions);
   } else if ((window.innerWidth < 1280) & (window.innerWidth >= 768)) {
     let step = 580;
     for (let i = 2; i <= 8; i++) {
       positions.push(parseInt(positions[i - 1]) - step + "px");
     }
-    console.log(positions);
+    // console.log(positions);
   } else {
     let step = 270;
     for (let i = 2; i <= 16; i++) {
       positions.push(parseInt(positions[i - 1]) - step + "px");
     }
-    console.log(positions);
+    // console.log(positions);
   }
+
+  // for (const cardContainer of CARDS_CONTAINERS) {
+  //   cardContainer.style.left = positions[counter];
+  // }
 };
 
 const moveStart = () => {
@@ -212,11 +217,6 @@ const moveStart = () => {
   for (const cardContainer of CARDS_CONTAINERS) {
     cardContainer.style.left = positions[counter];
   }
-
-  BTN_RIGHT.removeEventListener("click", moveRight);
-  BTN_LEFT.removeEventListener("click", moveLeft);
-  BTN_START.removeEventListener("click", moveStart);
-  BTN_END.removeEventListener("click", moveEnd);
 };
 
 const moveEnd = () => {
@@ -226,11 +226,6 @@ const moveEnd = () => {
   for (const cardContainer of CARDS_CONTAINERS) {
     cardContainer.style.left = positions[counter];
   }
-
-  BTN_RIGHT.removeEventListener("click", moveRight);
-  BTN_LEFT.removeEventListener("click", moveLeft);
-  BTN_START.removeEventListener("click", moveStart);
-  BTN_END.removeEventListener("click", moveEnd);
 };
 
 const moveLeft = () => {
@@ -239,6 +234,7 @@ const moveLeft = () => {
   }
   counter--;
   pageNumber.innerHTML = counter;
+
   for (const cardContainer of CARDS_CONTAINERS) {
     cardContainer.style.left = positions[counter];
   }
@@ -356,7 +352,10 @@ BTN_END.addEventListener("mouseout", (event) => {
 
 randomizeCards(CARDS_CONTAINERS);
 changePositions();
-window.addEventListener("resize", changePositions);
+window.addEventListener("resize", () => {
+  changePositions();
+  // console.log("test");
+});
 
 BTN_LEFT.addEventListener("click", moveLeft);
 BTN_RIGHT.addEventListener("click", moveRight);
