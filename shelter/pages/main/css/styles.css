@@ -1077,9 +1077,9 @@ footer .footer-puppy-768 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1097,6 +1097,9 @@ footer .footer-puppy-768 {
   border-radius: 9px 0px 0px 9px;
   width: 500px;
   height: 500px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .pets .modal-window-container .modal-window .content {
@@ -1107,12 +1110,12 @@ footer .footer-puppy-768 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 351px;
   height: 362px;
-  margin: 50px 20px 88px 0px;
+  padding: 50px 20px 0px 0px;
 }
 
 .pets .modal-window-container .modal-window .content h3 {
@@ -1157,6 +1160,15 @@ footer .footer-puppy-768 {
   font-size: 15px;
   line-height: 110%;
   /* identical to box height, or 17px */
+  letter-spacing: 0.06em;
+}
+
+.pets .modal-window-container .modal-window .content ul li .text {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
   letter-spacing: 0.06em;
 }
 
@@ -1226,6 +1238,9 @@ footer .footer-puppy-768 {
   }
   .pets .modal-window-container .modal-window {
     width: 630px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .pets .modal-window-container .modal-window img {
     width: 350px;
@@ -1233,7 +1248,10 @@ footer .footer-puppy-768 {
   }
   .pets .modal-window-container .modal-window .content {
     width: 260px;
-    margin: 10px 10px 0px 0px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0px 10px 0px 0px;
   }
   .pets .modal-window-container .modal-window .content h5 {
     color: #000000;
@@ -1253,16 +1271,6 @@ footer .footer-puppy-768 {
   .pets .modal-window-container .modal-window .content ul li {
     color: #000000;
     margin-top: 5px;
-  }
-  .pets .modal-window-container .modal-window .content ul li .features {
-    /* h5-modal-window */
-    font-family: "Georgia";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 110%;
-    /* identical to box height, or 17px */
-    letter-spacing: 0.06em;
   }
 }
 
@@ -1342,6 +1350,9 @@ footer .footer-puppy-768 {
   }
   .pets .modal-window-container .modal-window {
     width: 240px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .pets .modal-window-container .modal-window img {
     display: none;
@@ -1354,7 +1365,10 @@ footer .footer-puppy-768 {
         -ms-flex-align: center;
             align-items: center;
     width: 220px;
-    margin: 10px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
   }
   .pets .modal-window-container .modal-window .content h3 {
     text-align: center;
@@ -1370,16 +1384,6 @@ footer .footer-puppy-768 {
             margin-block-start: 15px;
     -ms-flex-item-align: start;
         align-self: flex-start;
-  }
-  .pets .modal-window-container .modal-window .content ul li .features {
-    /* h5-modal-window */
-    font-family: "Georgia";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 110%;
-    /* identical to box height, or 17px */
-    letter-spacing: 0.06em;
   }
 }
 
@@ -2010,6 +2014,7 @@ body {
 body.active::after {
   content: "";
   position: fixed;
+  cursor: pointer;
   z-index: 5;
   top: 0;
   left: 0;

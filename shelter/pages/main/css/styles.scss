@@ -17,6 +17,7 @@ body {
 body.active::after {
   content: "";
   position: fixed;
+  cursor: pointer;
   z-index: 5;
   top: 0;
   left: 0;
