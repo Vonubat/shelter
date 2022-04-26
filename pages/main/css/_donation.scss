@@ -1,0 +1,150 @@
+.donation {
+  background: $color-light-l;
+  width: 100%;
+
+  .donation-content {
+    display: flex;
+    justify-content: center;
+    padding: 80px 182px 100px 183px;
+
+    .donation-dog-1280 {
+      margin-top: 11px;
+      margin-bottom: 10px;
+      margin-right: 30px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        width: 300px;
+        height: 90px;
+        color: $color-dark-l;
+      }
+
+      h5 {
+        color: $color-dark-l;
+        height: 17px;
+        padding-top: 20px;
+      }
+
+      .credit-card {
+        margin-top: 20px;
+        width: 349px;
+        height: 43px;
+        background: $color-primary;
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        &:hover {
+          background: $color-primary-light;
+        }
+
+        img {
+          margin: 0px 15px;
+        }
+
+        h4 {
+          color: $color-dark-l;
+        }
+      }
+
+      .lorem {
+        font-family: "Arial";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-dark-m;
+        padding-top: 20px;
+        width: 380px;
+        height: 72px;
+      }
+    }
+  }
+  .donation-dog-768 {
+    display: none;
+  }
+}
+
+//Media Queries
+
+@media screen and (max-width: 1279px) {
+  .donation {
+    .donation-content {
+      padding: 80px calc(194 / 768 * 100%) 0px;
+
+      .donation-dog-1280 {
+        display: none;
+      }
+    }
+    .donation-dog-768 {
+      display: block;
+      padding: 60px 0 100px 0;
+
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .donation {
+    .donation-content {
+      padding: 42px 10px 0px;
+
+      .content {
+        width: 300px;
+        align-items: center;
+
+        h3 {
+          @include h3-mobile;
+          height: 64px;
+          width: 220px;
+          text-align: center;
+        }
+
+        h5 {
+          font-family: "Georgia";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 160%;
+          height: 24px;
+          width: 273px;
+          padding-top: 20px;
+          white-space: nowrap;
+          letter-spacing: 0.01px;
+        }
+
+        .credit-card {
+          width: 281px;
+          height: 43px;
+
+          h4 {
+            font-family: "Georgia";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 110%;
+            letter-spacing: 0.06em;
+          }
+        }
+
+        .lorem {
+          width: 280px;
+          height: 90px;
+          text-align: justify;
+        }
+      }
+    }
+    .donation-dog-768 {
+      display: block;
+      padding: 42px 30px;
+      width: 260px;
+      height: 135.2px;
+    }
+  }
+}

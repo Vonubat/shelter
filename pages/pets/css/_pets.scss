@@ -1,0 +1,387 @@
+.pets {
+  background: $color-light-l;
+  width: 100%;
+
+  .pets-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 40px 100px;
+
+    h3 {
+      color: $color-dark-l;
+      width: 400px;
+      height: 90px;
+      text-align: center;
+    }
+
+    .wrapper-cards {
+      display: flex;
+      position: relative;
+      width: 1200px;
+      margin: 45px 0px;
+      overflow: hidden;
+
+      .cards-container {
+        display: flex;
+        position: relative;
+        transition-duration: 1s;
+        transition-property: left;
+        left: 0px;
+
+        .cards {
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          justify-content: center;
+          width: 1200px;
+          row-gap: 30px;
+          column-gap: 40px;
+          margin: 15px 0px;
+
+          .card {
+            @include card;
+            &:hover {
+              .button-secondary {
+                background: $color-primary-light;
+                border: 2px solid transparent;
+              }
+            }
+          }
+
+          .button-secondary {
+            @include button-secondary();
+            margin-top: 30px;
+          }
+
+          .name {
+            font-family: Georgia;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0.06em;
+            text-align: center;
+            color: $color-dark-l;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      @include button-arrow();
+      margin: 0 10px;
+    }
+
+    .right {
+      color: $color-dark-3xl;
+      &:hover {
+        background: $color-light-l;
+        border: 2px solid $color-primary;
+      }
+    }
+
+    .page {
+      color: $color-dark-3xl;
+      background: $color-primary;
+      cursor: default;
+      &:hover {
+        background: $color-primary;
+        border: 2px solid $color-primary;
+      }
+    }
+
+    .left {
+      color: $color-dark-s;
+      border: 2px solid $color-dark-s;
+      cursor: default;
+      &:hover {
+        background: $color-light-l;
+        border: 2px solid $color-dark-s;
+      }
+    }
+  }
+
+  .modal-window-container {
+    position: fixed;
+    width: 900px;
+    height: 500px;
+    background-color: transparent;
+    transform: translateX(100%);
+    z-index: 30;
+
+    .close-btn {
+      cursor: pointer;
+      position: absolute;
+      top: -52px;
+      right: -52px;
+      min-width: 52px;
+      height: 52px;
+      background-image: url(../../../assets/icons/modal_close_button.png);
+      transition: all 0.3s;
+      &:hover {
+        background-image: url(../../../assets/icons/modal_close_button-hover.png);
+      }
+    }
+
+    .modal-window {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 900px;
+      max-height: 500px;
+      bottom: 0px;
+      left: 0px;
+      background-color: $color-light-s;
+      box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+      border-radius: 9px;
+      img {
+        border-radius: 9px 0px 0px 9px;
+        width: 500px;
+        height: 500px;
+        align-self: center;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 351px;
+        height: 362px;
+        padding: 50px 20px 0px 0px;
+        h3 {
+          color: #000000;
+        }
+
+        h4 {
+          color: #000000;
+          padding-top: 10px;
+        }
+        h5 {
+          color: #000000;
+          padding-top: 40px;
+        }
+
+        ul {
+          display: block;
+          list-style-type: none;
+          margin-block-start: 29px;
+          margin-block-end: 0;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          padding-inline-start: 0px;
+
+          li {
+            color: #000000;
+            margin-top: 11px;
+            .features {
+              @include h5-modal-window;
+            }
+
+            .text {
+              font-family: "Georgia";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 110%;
+              letter-spacing: 0.06em;
+            }
+          }
+        }
+
+        // Changing color of list-style-type
+        ul li::before {
+          content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          color: $color-primary; /* Change the color */
+          font-weight: bold; /* If you want it to be bold */
+          display: inline-block; /* Needed to add space between the bullet and the text */
+          width: 1em; /* Also needed for space (tweak if needed) */
+          // margin-left: -1em; /* Also needed for space (tweak if needed) */
+        }
+      }
+    }
+  }
+  .modal-window-container.active {
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transition: transform 0.5s;
+    transform: translate(-50%, -50%);
+  }
+}
+
+//Media Queries
+
+@media screen and (max-width: 1279px) {
+  .pets {
+    .pets-content {
+      padding: 60px 30px 70px;
+
+      h3 {
+        margin-top: 20px;
+      }
+
+      .wrapper-cards {
+        width: 580px;
+        margin: 30px 0px 40px;
+
+        .cards-container {
+          .cards {
+            width: 580px;
+            row-gap: 30px;
+            column-gap: 40px;
+            margin: 0px;
+
+            .item1 {
+              display: none;
+            }
+
+            .item2 {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    nav {
+      margin-bottom: 6px;
+    }
+
+    .modal-window-container {
+      width: 630px;
+      height: 350px;
+
+      .modal-window {
+        width: 630px;
+        height: fit-content;
+
+        img {
+          width: 350px;
+          height: 350px;
+        }
+        .content {
+          width: 260px;
+          height: fit-content;
+          padding: 0px 10px 0px 0px;
+
+          h5 {
+            color: #000000;
+            padding-top: 20px;
+            font-family: "Georgia";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 14.3px;
+            /* or 14px */
+
+            letter-spacing: 0.06em;
+          }
+
+          ul {
+            margin-block-start: 15px;
+
+            li {
+              color: #000000;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pets {
+    .pets-content {
+      padding: 42px 10px 42px;
+
+      h3 {
+        @include h3-mobile();
+        width: 300px;
+        height: 64px;
+        white-space: nowrap;
+        margin-top: 0px;
+      }
+
+      .wrapper-cards {
+        width: 270px;
+        margin: 42px 0px;
+
+        .cards-container {
+          .cards {
+            width: 270px;
+            row-gap: 30px;
+            column-gap: 0px;
+
+            .item3 {
+              display: none;
+            }
+
+            .item4 {
+              display: none;
+            }
+
+            .item5 {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    nav {
+      margin-bottom: 0px;
+
+      a {
+        margin: 0 5px;
+      }
+    }
+
+    .modal-window-container {
+      width: 240px;
+
+      .close-btn {
+        right: -30px;
+      }
+
+      .modal-window {
+        width: 240px;
+        height: fit-content;
+
+        img {
+          display: none;
+        }
+        .content {
+          justify-content: center;
+          align-items: center;
+          width: 220px;
+          height: fit-content;
+          padding: 10px;
+
+          h3 {
+            text-align: center;
+          }
+
+          h4 {
+            text-align: center;
+          }
+          h5 {
+            text-align: justify;
+          }
+
+          ul {
+            margin-block-start: 15px;
+            align-self: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
